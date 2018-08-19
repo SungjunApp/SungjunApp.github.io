@@ -1,0 +1,289 @@
+﻿@charset "utf-8";
+
+html {-webkit-text-size-adjust:none}
+html, body, div, section, article, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, font, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td ,hr
+{margin:0;padding:0;border:0;font-size:100%;line-height:normal;-webkit-text-size-adjust:none !important;
+box-sizing:border-box;
+-o-box-sizing:border-box;
+-ms-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box}
+
+body {font-family:'NanumGothic','나눔고딕','NanumGothicWeb','ng', dotum,'돋움',gulim,'굴림',Arial,Tahoma,verdana,sans-serif,helvetica;font-size:1.000em;color:#666;overflow-y:scroll;*overflow-y:auto;overflow-x:hidden;word-wrap: break-word; word-break: break-all}
+h2,h3, h4, h5, h6 {font-weight:normal}
+hr {height:0;display:none}
+a {color:#666;cursor:pointer;text-decoration:none;
+box-sizing:border-box;
+-o-box-sizing:border-box;
+-ms-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box}
+ol, ul {list-style: none}
+li {vertical-align:top}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse:collapse;border-spacing:0}
+caption, th, td {font-weight:normal}
+blockquote:before, blockquote:after,q:before, q:after {content: ""}
+blockquote, q {quotes: "" ""}
+img {border:0;vertical-align:middle}
+input {padding:0;margin:0;vertical-align:top;font-size:1.000em}
+select {font-size:1.000em;margin:0;padding:0}
+input[type="search"], input[type="password"], input[type="tel"], input[type="email"], input[type="text"], input[type="submit"], input[type="button"] {-webkit-appearance:none;-webkit-border-radius:0}
+textarea {font-size:1.000em;border:1px solid #bbbbbb;border-radius:3px}
+select {padding:2px 0;width:100%; font-size:13px; text-indent:3px}
+img, fieldset { border:0; }
+em, address { font-style: normal}
+form legend, caption {display:none!important}
+address, article, aside, blockquote, center, dir, figure, figcaption, footer, form, h1, h2, h3, h4, h5, h6, header,hgroup, hr, html, legend, listing, menu, nav, plaintext, pre,section, summary, xmp { display:block}
+body.android input {-webkit-tap-highlight-color:rgba(0,0,0,0)}
+.irt {position:absolute;z-index:-1;top:-9999em;left:-9999em;text-indent: -9999em}
+.ellipsis {display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+
+
+
+#wrap {position:relative;width:100%}
+
+.sc_line {border-top:1px solid #eee}
+section.inner p span.br {display:block;line-height:1.8}
+
+footer h2 {width:220px;margin:0 auto;padding:50px 0 10px}
+footer h2 img {width:100%}
+footer p {text-align:center}
+footer p img {max-width:100%}
+footer .link {text-align:center}
+footer .link span {display:inline-block; padding:1em .5em;background:url(https://sites.google.com/site/starvejobs/imageCollection2/bg_bar.gif) no-repeat left center}
+footer .link span:first-child {background:none}
+footer .copyright {padding:10px 0}
+
+.util {width:100%;background:#f2f2f2;}
+.util .inner {width:960px;margin:0 auto;padding:30px 40px;background:#fff}
+.util .inner h2 {padding:20px 0;font-size:38px;font-weight:600}
+.util .inner p.ttl {margin-top:10px;font-size:13px;line-height:18px}
+.util .inner article {margin-top:15px}
+.util .inner article h3 {margin:10px 0;font-size:15px;font-weight:600}
+.util .inner article p.txt ,
+.util .inner article ul li {padding-bottom:3px;font-size:13px;line-height:18px}
+.util .inner article ul li ul.dep {padding-left:10px}
+.util .inner article ul li ul.dep li {font-size:12px}
+
+.update {position:absolute;top:50%;left:50%;width:640px;height:100px;margin:0px 0 0 -320px;text-align:center}
+.update p.t02 {margin-top:20px;font-size:12px}
+
+
+ /*1160 이하일 때*/
+@media screen and (max-width:1160px) { 
+
+.sec02 .inner {padding:4.81em 0 4.81em 32.5%}
+
+}
+
+ /*960 이상일 때*/
+@media screen and (min-width:960px) { 
+
+.sec01 .inner {width:60em}
+.sec02 .inner {width:72.5em}
+.sec02 .inner div.form {width:38.93em;padding-right:7.812em}
+.sec04 .inner,
+.sec05 .inner,
+.sec06 .inner{width:60em}
+.sec07 .inner {width:75em}
+.sec08 .inner {width:60em}
+.sec09 .inner {width:60em}
+.sec10 .inner {width:60em}
+
+}
+
+
+/*959 ~ 640 일 때*/
+@media screen and (max-width:959px) { 
+
+body {font-size:0.750em}
+.sec01 {padding:6em 0;background-position:center 25.33em;
+-webkit-background-size:720px auto;
+-ms-background-size:720px auto;
+-o-background-size:720px auto;
+-moz-background-size:720px auto;
+background-size:720px auto}
+.sec01 .inner {width:100%;}
+.sec01 .inner h1 {padding:0}
+.sec01 .inner h1 img {width:520px}
+.sec01 .inner .txt_area {padding:0 0.83em;margin-top:37.8em}
+
+.sec02 .inner {width:100%;padding:2.81em 0.625em 2.81em 10.37em;background:url(https://sites.google.com/site/starvejobs/imageCollection2/sec02_img02.gif) no-repeat 0 0;
+-webkit-background-size:11.66em;
+-ms-background-size:11.66em;
+-o-background-size:11.66em;
+-moz-background-size:11.66em;
+background-size:11.66em}
+.sec02 .inner h2 {padding:0 0 0 0.25em}
+.sec04 {padding:6em 0 12em 0;background-position:right 17.5em;
+-webkit-background-size:464px auto;
+-ms-background-size:464px auto;
+-o-background-size:464px auto;
+-moz-background-size:464px auto;
+background-size:464px auto}
+.sec04 .inner {width:100%;padding:0 0.83em}
+.sec04 .inner h2 img {max-width:100%}
+
+.sec05 {padding:3em 0 30em 0;
+-webkit-background-size:210px auto;
+-ms-background-size:210px auto;
+-o-background-size:210px auto;
+-moz-background-size:210px auto;
+background-size:210px auto}
+.sec05 .inner {padding:0 0.83em}
+.sec05 .inner h2 img {max-width:100%}
+
+.sec06 {padding:2.5em 0 8em 0;background-position:90% bottom;
+-webkit-background-size:210px auto;
+-ms-background-size:210px auto;
+-o-background-size:210px auto;
+-moz-background-size:210px auto;
+background-size:210px auto}
+.sec06 .inner {padding:0 0.83em}
+.sec06 .inner h2 img {max-width:100%}
+
+.sec07 .inner {width:100%;padding:2.5em 0.83em 17.5em 0.83em;background-position:center bottom;
+-webkit-background-size:320px auto;
+-ms-background-size:320px auto;
+-o-background-size:320px auto;
+-moz-background-size:320px auto;
+background-size:320px auto}
+.sec07 .inner h2 img {max-width:100%}
+.sec07 .inner p {padding-left:0}
+.sec07 .inner p span.t01,
+.sec07 .inner p span.t02,
+.sec07 .inner p span.t03,
+.sec07 .inner p span.t04,
+.sec07 .inner p span.t05 {padding-left:0}
+
+.sec08 {padding:2.5em 0 8em 0;background-position:80% bottom;
+-webkit-background-size:480px auto;
+-ms-background-size:480px auto;
+-o-background-size:480px auto;
+-moz-background-size:480px auto;
+background-size:480px auto}
+.sec08 .inner {padding:0 0.83em}
+.sec08 .inner h2 img {max-width:100%}
+
+.sec09 {
+-webkit-background-size:700px auto;
+-ms-background-size:700px auto;
+-o-background-size:700px auto;
+-moz-background-size:700px auto;
+background-size:700px auto}
+.sec09 .inner {padding:0 0.83em}
+.sec09 .inner h2 img {max-width:100%}
+
+.sec10 .inner h2 img {width:520px}
+
+.util .inner {width:100%;padding:15px 20px}
+.util .inner h2 {font-size:20px}
+
+}
+
+
+/* 640 이하일 때 */
+@media screen and (max-width:640px) { 
+
+body {font-size:0.750em}
+.sec01 {padding:2.5em 0 ;background-position:56% 12.58em;
+-webkit-background-size:320px auto;
+-ms-background-size:320px auto;
+-o-background-size:320px auto;
+-moz-background-size:320px auto;
+background-size:320px auto}
+.sec01 .inner h1 img {width:248px}
+.sec01 .inner .txt_area {margin-top:17.6em;padding:0 0.83em}
+.sec01 .inner .txt_area p {font-size:1.000em}
+.sec01 .inner .txt_area p.txt01 {line-height:1.50em}
+.sec01 .inner .lst_area {margin:2.00em 0.83em}
+.sec01 .inner .lst_area ul li {width:32.5%;margin-right:1%}
+.sec01 .inner .lst_area ul li:last-child {width:32%;margin-right:0}
+
+
+.sec02 .inner {padding:1.83em 0.83em;background:url(https://sites.google.com/site/starvejobs/imageCollection2/sec02_img02.gif) no-repeat 0 0;
+-webkit-background-size:6em auto;
+-ms-background-size:6em auto;
+-o-background-size:6em auto;
+-moz-background-size:6em auto;
+background-size:6em auto}
+.sec02 .inner h2 {padding:1.61em 0 0 3.61em}
+.sec02 .inner h2 img {width:235px}
+.sec02 .inner p {margin:2.5em 0 0 0;letter-spacing:-0.05em}
+.sec02 .inner div.form {width:100%;height:5.375em;padding-right:7.125em}
+.sec02 .inner div.form input {height:2.25em}
+.sec02 .inner div.form label {left:0;top:auto;bottom:0;font-size:1.000em;letter-spacing:-0.03em}
+.sec02 .inner div.form span.btn_submit {width:6.275em;height:2.375em}
+.sec02 .inner div.form span.btn_submit a {height:2.375em;line-height:2;font-size:1.125em}
+
+.sec03 {padding:2em 0.83em}
+.sec03 h2 img {width:180px}
+.sec03 p.txt01 {font-size:1.000em;letter-spacing:-0.05em}
+.sec03 p.txt02 {margin-top:1.25em;font-size:1.167em}
+.sec04 {padding:3em 0 33em 0;background-position:66% bottom;
+-webkit-background-size:650px auto;
+-ms-background-size:650px auto;
+-o-background-size:650px auto;
+-moz-background-size:650px auto;
+background-size:650px auto}
+.sec04 .inner h2 img {width:241px}
+.sec05 .inner h2 img {width:235px}
+.sec05 {padding:3em 0 29em 0;background-position:center bottom;
+-webkit-background-size:220px auto;
+-ms-background-size:220px auto;
+-o-background-size:220px auto;
+-moz-background-size:220px auto;
+background-size:220px auto}
+
+.sec06 {padding:3em 0 28em 0;background-position:center bottom;
+-webkit-background-size:220px auto;
+-ms-background-size:220px auto;
+-o-background-size:220px auto;
+-moz-background-size:220px auto;
+background-size:220px auto}
+.sec06 .inner h2 img {width:153px;}
+
+.sec07 .inner {padding-bottom:22.5em;background-position:center  bottom;
+-webkit-background-size:400px auto;
+-ms-background-size:400px auto;
+-o-background-size:400px auto;
+-moz-background-size:400px auto;
+background-size:400px auto}
+.sec07 .inner h2 img {width:160px;}
+.sec08 {padding:2.5em 0 17em 0;background-position:80% bottom;
+-webkit-background-size:550px auto;
+-ms-background-size:550px auto;
+-o-background-size:550px auto;
+-moz-background-size:550px auto;
+background-size:550px auto}
+.sec08 .inner h2 img {width:208px;}
+
+.sec09 {padding:2.43em 0 35.25em 0;
+-webkit-background-size:640px auto;
+-ms-background-size:640px auto;
+-o-background-size:640px auto;
+-moz-background-size:640px auto;
+background-size:640px auto}
+.sec09 .inner h2 {float:none;margin:0 auto}
+.sec09 .inner p {float:none;padding:2em 0 0 0;text-align:center}
+.sec09 .inner h2 img {width:77px}
+.sec10 {margin-top:1.91em;padding:2.5em 0}
+.sec10 .inner h2 img {width:235px}
+.sec10 .inner .lst_area {margin:2.315em 1.375em 0 1.375em}
+footer h2 {width:150px;padding:20px 0 0}
+footer p span.address {display:block}
+footer p,
+footer p.copyright {padding:0.5em}
+
+section.inner p span.br {display:inline;line-height:1.8}
+
+}
+
+@media screen and (max-width:320px) {  /*320 이하일 때*/
+
+
+}
+
+
+
