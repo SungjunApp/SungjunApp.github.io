@@ -1,0 +1,4544 @@
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ConstStringBenchmark.baseline
+
+# Run progress: 0.00% complete, ETA 01:39:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 2.374 ns/op
+# Warmup Iteration   2: 2.301 ns/op
+# Warmup Iteration   3: 1.973 ns/op
+Iteration   1: 2.030 ns/op
+Iteration   2: 2.020 ns/op
+Iteration   3: 2.229 ns/op
+Iteration   4: 2.160 ns/op
+Iteration   5: 2.002 ns/op
+Iteration   6: 2.073 ns/op
+Iteration   7: 1.993 ns/op
+
+# Run progress: 0.51% complete, ETA 01:39:33
+# Fork: 2 of 2
+# Warmup Iteration   1: 2.737 ns/op
+# Warmup Iteration   2: 2.426 ns/op
+# Warmup Iteration   3: 1.997 ns/op
+Iteration   1: 2.044 ns/op
+Iteration   2: 2.173 ns/op
+Iteration   3: 1.984 ns/op
+Iteration   4: 2.071 ns/op
+Iteration   5: 1.992 ns/op
+Iteration   6: 2.300 ns/op
+Iteration   7: 2.296 ns/op
+
+
+Result "baseline":
+  2.098 ±(99.9%) 0.128 ns/op [Average]
+  (min, avg, max) = (1.984, 2.098, 2.300), stdev = 0.113
+  CI (99.9%): [1.970, 2.225] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ConstStringBenchmark.sInterpolator
+
+# Run progress: 1.01% complete, ETA 01:39:01
+# Fork: 1 of 2
+# Warmup Iteration   1: 43.060 ns/op
+# Warmup Iteration   2: 38.846 ns/op
+# Warmup Iteration   3: 34.794 ns/op
+Iteration   1: 37.196 ns/op
+Iteration   2: 34.155 ns/op
+Iteration   3: 37.582 ns/op
+Iteration   4: 38.660 ns/op
+Iteration   5: 38.289 ns/op
+Iteration   6: 39.424 ns/op
+Iteration   7: 34.400 ns/op
+
+# Run progress: 1.52% complete, ETA 01:38:50
+# Fork: 2 of 2
+# Warmup Iteration   1: 42.458 ns/op
+# Warmup Iteration   2: 37.575 ns/op
+# Warmup Iteration   3: 34.839 ns/op
+Iteration   1: 35.707 ns/op
+Iteration   2: 34.353 ns/op
+Iteration   3: 34.281 ns/op
+Iteration   4: 35.151 ns/op
+Iteration   5: 34.969 ns/op
+Iteration   6: 36.199 ns/op
+Iteration   7: 35.280 ns/op
+
+
+Result "sInterpolator":
+  36.118 ±(99.9%) 2.024 ns/op [Average]
+  (min, avg, max) = (34.155, 36.118, 39.424), stdev = 1.794
+  CI (99.9%): [34.094, 38.141] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ConstStringBenchmark.sfiInterpolator
+
+# Run progress: 2.02% complete, ETA 01:38:24
+# Fork: 1 of 2
+# Warmup Iteration   1: 2.407 ns/op
+# Warmup Iteration   2: 2.312 ns/op
+# Warmup Iteration   3: 1.977 ns/op
+Iteration   1: 2.062 ns/op
+Iteration   2: 2.003 ns/op
+Iteration   3: 2.000 ns/op
+Iteration   4: 2.066 ns/op
+Iteration   5: 2.007 ns/op
+Iteration   6: 2.101 ns/op
+Iteration   7: 2.317 ns/op
+
+# Run progress: 2.53% complete, ETA 01:37:52
+# Fork: 2 of 2
+# Warmup Iteration   1: 2.792 ns/op
+# Warmup Iteration   2: 2.764 ns/op
+# Warmup Iteration   3: 2.519 ns/op
+Iteration   1: 2.311 ns/op
+Iteration   2: 2.272 ns/op
+Iteration   3: 2.220 ns/op
+Iteration   4: 2.278 ns/op
+Iteration   5: 2.379 ns/op
+Iteration   6: 2.648 ns/op
+Iteration   7: 3.035 ns/op
+
+
+Result "sfiInterpolator":
+  2.264 ±(99.9%) 0.324 ns/op [Average]
+  (min, avg, max) = (2.000, 2.264, 3.035), stdev = 0.287
+  CI (99.9%): [1.940, 2.588] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.EmptyStringBenchmark.baseline
+
+# Run progress: 3.03% complete, ETA 01:37:17
+# Fork: 1 of 2
+# Warmup Iteration   1: 2.980 ns/op
+# Warmup Iteration   2: 3.386 ns/op
+# Warmup Iteration   3: 2.692 ns/op
+Iteration   1: 2.898 ns/op
+Iteration   2: 2.678 ns/op
+Iteration   3: 2.464 ns/op
+Iteration   4: 2.346 ns/op
+Iteration   5: 2.395 ns/op
+Iteration   6: 2.343 ns/op
+Iteration   7: 2.111 ns/op
+
+# Run progress: 3.54% complete, ETA 01:36:51
+# Fork: 2 of 2
+# Warmup Iteration   1: 2.512 ns/op
+# Warmup Iteration   2: 2.728 ns/op
+# Warmup Iteration   3: 2.129 ns/op
+Iteration   1: 2.275 ns/op
+Iteration   2: 2.228 ns/op
+Iteration   3: 2.167 ns/op
+Iteration   4: 2.075 ns/op
+Iteration   5: 2.157 ns/op
+Iteration   6: 2.225 ns/op
+Iteration   7: 2.068 ns/op
+
+
+Result "baseline":
+  2.316 ±(99.9%) 0.267 ns/op [Average]
+  (min, avg, max) = (2.068, 2.316, 2.898), stdev = 0.236
+  CI (99.9%): [2.050, 2.583] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.EmptyStringBenchmark.sInterpolator
+
+# Run progress: 4.04% complete, ETA 01:36:18
+# Fork: 1 of 2
+# Warmup Iteration   1: 30.669 ns/op
+# Warmup Iteration   2: 26.652 ns/op
+# Warmup Iteration   3: 25.043 ns/op
+Iteration   1: 24.547 ns/op
+Iteration   2: 25.597 ns/op
+Iteration   3: 25.300 ns/op
+Iteration   4: 25.785 ns/op
+Iteration   5: 26.104 ns/op
+Iteration   6: 24.674 ns/op
+Iteration   7: 27.051 ns/op
+
+# Run progress: 4.55% complete, ETA 01:35:49
+# Fork: 2 of 2
+# Warmup Iteration   1: 28.769 ns/op
+# Warmup Iteration   2: 26.713 ns/op
+# Warmup Iteration   3: 26.058 ns/op
+Iteration   1: 25.147 ns/op
+Iteration   2: 26.865 ns/op
+Iteration   3: 26.385 ns/op
+Iteration   4: 27.214 ns/op
+Iteration   5: 26.517 ns/op
+Iteration   6: 24.779 ns/op
+Iteration   7: 24.857 ns/op
+
+
+Result "sInterpolator":
+  25.773 ±(99.9%) 1.043 ns/op [Average]
+  (min, avg, max) = (24.547, 25.773, 27.214), stdev = 0.925
+  CI (99.9%): [24.730, 26.817] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.EmptyStringBenchmark.sfiInterpolator
+
+# Run progress: 5.05% complete, ETA 01:35:23
+# Fork: 1 of 2
+# Warmup Iteration   1: 2.515 ns/op
+# Warmup Iteration   2: 2.351 ns/op
+# Warmup Iteration   3: 2.110 ns/op
+Iteration   1: 2.141 ns/op
+Iteration   2: 2.133 ns/op
+Iteration   3: 2.170 ns/op
+Iteration   4: 2.088 ns/op
+Iteration   5: 2.240 ns/op
+Iteration   6: 2.108 ns/op
+Iteration   7: 2.103 ns/op
+
+# Run progress: 5.56% complete, ETA 01:34:51
+# Fork: 2 of 2
+# Warmup Iteration   1: 2.599 ns/op
+# Warmup Iteration   2: 2.504 ns/op
+# Warmup Iteration   3: 2.115 ns/op
+Iteration   1: 2.106 ns/op
+Iteration   2: 2.040 ns/op
+Iteration   3: 2.302 ns/op
+Iteration   4: 2.319 ns/op
+Iteration   5: 2.224 ns/op
+Iteration   6: 2.266 ns/op
+Iteration   7: 2.087 ns/op
+
+
+Result "sfiInterpolator":
+  2.166 ±(99.9%) 0.100 ns/op [Average]
+  (min, avg, max) = (2.040, 2.166, 2.319), stdev = 0.088
+  CI (99.9%): [2.066, 2.266] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized1
+# Parameters: (arg = Tiny)
+
+# Run progress: 6.06% complete, ETA 01:34:18
+# Fork: 1 of 2
+# Warmup Iteration   1: 50.524 ns/op
+# Warmup Iteration   2: 52.739 ns/op
+# Warmup Iteration   3: 50.107 ns/op
+Iteration   1: 48.563 ns/op
+Iteration   2: 54.900 ns/op
+Iteration   3: 51.076 ns/op
+Iteration   4: 45.809 ns/op
+Iteration   5: 49.501 ns/op
+Iteration   6: 49.148 ns/op
+Iteration   7: 50.735 ns/op
+
+# Run progress: 6.57% complete, ETA 01:33:49
+# Fork: 2 of 2
+# Warmup Iteration   1: 36.299 ns/op
+# Warmup Iteration   2: 46.650 ns/op
+# Warmup Iteration   3: 48.177 ns/op
+Iteration   1: 46.277 ns/op
+Iteration   2: 49.155 ns/op
+Iteration   3: 48.064 ns/op
+Iteration   4: 47.452 ns/op
+Iteration   5: 48.380 ns/op
+Iteration   6: 48.611 ns/op
+Iteration   7: 46.976 ns/op
+
+
+Result "concatOptimized1":
+  48.903 ±(99.9%) 2.580 ns/op [Average]
+  (min, avg, max) = (45.809, 48.903, 54.900), stdev = 2.287
+  CI (99.9%): [46.323, 51.483] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized1
+# Parameters: (arg = VeryShort)
+
+# Run progress: 7.07% complete, ETA 01:33:18
+# Fork: 1 of 2
+# Warmup Iteration   1: 37.189 ns/op
+# Warmup Iteration   2: 51.844 ns/op
+# Warmup Iteration   3: 51.199 ns/op
+Iteration   1: 50.310 ns/op
+Iteration   2: 51.108 ns/op
+Iteration   3: 50.496 ns/op
+Iteration   4: 49.962 ns/op
+Iteration   5: 49.507 ns/op
+Iteration   6: 46.531 ns/op
+Iteration   7: 47.940 ns/op
+
+# Run progress: 7.58% complete, ETA 01:32:48
+# Fork: 2 of 2
+# Warmup Iteration   1: 34.449 ns/op
+# Warmup Iteration   2: 46.623 ns/op
+# Warmup Iteration   3: 50.333 ns/op
+Iteration   1: 47.252 ns/op
+Iteration   2: 57.242 ns/op
+Iteration   3: 50.471 ns/op
+Iteration   4: 49.615 ns/op
+Iteration   5: 51.056 ns/op
+Iteration   6: 45.215 ns/op
+Iteration   7: 46.782 ns/op
+
+
+Result "concatOptimized1":
+  49.535 ±(99.9%) 3.278 ns/op [Average]
+  (min, avg, max) = (45.215, 49.535, 57.242), stdev = 2.906
+  CI (99.9%): [46.256, 52.813] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized1
+# Parameters: (arg = Short)
+
+# Run progress: 8.08% complete, ETA 01:32:17
+# Fork: 1 of 2
+# Warmup Iteration   1: 53.095 ns/op
+# Warmup Iteration   2: 79.093 ns/op
+# Warmup Iteration   3: 74.244 ns/op
+Iteration   1: 75.586 ns/op
+Iteration   2: 76.251 ns/op
+Iteration   3: 77.765 ns/op
+Iteration   4: 80.046 ns/op
+Iteration   5: 82.137 ns/op
+Iteration   6: 79.506 ns/op
+Iteration   7: 74.297 ns/op
+
+# Run progress: 8.59% complete, ETA 01:31:47
+# Fork: 2 of 2
+# Warmup Iteration   1: 50.691 ns/op
+# Warmup Iteration   2: 75.440 ns/op
+# Warmup Iteration   3: 70.874 ns/op
+Iteration   1: 73.623 ns/op
+Iteration   2: 73.937 ns/op
+Iteration   3: 68.084 ns/op
+Iteration   4: 68.771 ns/op
+Iteration   5: 67.321 ns/op
+Iteration   6: 66.042 ns/op
+Iteration   7: 67.567 ns/op
+
+
+Result "concatOptimized1":
+  73.638 ±(99.9%) 5.976 ns/op [Average]
+  (min, avg, max) = (66.042, 73.638, 82.137), stdev = 5.298
+  CI (99.9%): [67.662, 79.614] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized1
+# Parameters: (arg = Medium)
+
+# Run progress: 9.09% complete, ETA 01:31:15
+# Fork: 1 of 2
+# Warmup Iteration   1: 70.247 ns/op
+# Warmup Iteration   2: 84.500 ns/op
+# Warmup Iteration   3: 85.213 ns/op
+Iteration   1: 82.376 ns/op
+Iteration   2: 83.827 ns/op
+Iteration   3: 76.508 ns/op
+Iteration   4: 76.686 ns/op
+Iteration   5: 80.920 ns/op
+Iteration   6: 81.070 ns/op
+Iteration   7: 81.011 ns/op
+
+# Run progress: 9.60% complete, ETA 01:30:45
+# Fork: 2 of 2
+# Warmup Iteration   1: 66.139 ns/op
+# Warmup Iteration   2: 80.094 ns/op
+# Warmup Iteration   3: 79.870 ns/op
+Iteration   1: 74.869 ns/op
+Iteration   2: 80.704 ns/op
+Iteration   3: 80.210 ns/op
+Iteration   4: 74.299 ns/op
+Iteration   5: 73.939 ns/op
+Iteration   6: 77.290 ns/op
+Iteration   7: 76.228 ns/op
+
+
+Result "concatOptimized1":
+  78.567 ±(99.9%) 3.641 ns/op [Average]
+  (min, avg, max) = (73.939, 78.567, 83.827), stdev = 3.227
+  CI (99.9%): [74.926, 82.208] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized1
+# Parameters: (arg = Long)
+
+# Run progress: 10.10% complete, ETA 01:30:14
+# Fork: 1 of 2
+# Warmup Iteration   1: 82.179 ns/op
+# Warmup Iteration   2: 80.237 ns/op
+# Warmup Iteration   3: 80.521 ns/op
+Iteration   1: 80.413 ns/op
+Iteration   2: 83.321 ns/op
+Iteration   3: 79.076 ns/op
+Iteration   4: 81.506 ns/op
+Iteration   5: 76.504 ns/op
+Iteration   6: 82.718 ns/op
+Iteration   7: 76.612 ns/op
+
+# Run progress: 10.61% complete, ETA 01:29:43
+# Fork: 2 of 2
+# Warmup Iteration   1: 66.687 ns/op
+# Warmup Iteration   2: 88.461 ns/op
+# Warmup Iteration   3: 82.748 ns/op
+Iteration   1: 80.136 ns/op
+Iteration   2: 81.402 ns/op
+Iteration   3: 89.160 ns/op
+Iteration   4: 85.327 ns/op
+Iteration   5: 81.020 ns/op
+Iteration   6: 79.736 ns/op
+Iteration   7: 78.150 ns/op
+
+
+Result "concatOptimized1":
+  81.077 ±(99.9%) 3.806 ns/op [Average]
+  (min, avg, max) = (76.504, 81.077, 89.160), stdev = 3.374
+  CI (99.9%): [77.271, 84.883] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized1
+# Parameters: (arg = VeryLong)
+
+# Run progress: 11.11% complete, ETA 01:29:12
+# Fork: 1 of 2
+# Warmup Iteration   1: 207.208 ns/op
+# Warmup Iteration   2: 192.416 ns/op
+# Warmup Iteration   3: 204.520 ns/op
+Iteration   1: 207.789 ns/op
+Iteration   2: 224.422 ns/op
+Iteration   3: 204.963 ns/op
+Iteration   4: 195.441 ns/op
+Iteration   5: 198.497 ns/op
+Iteration   6: 202.736 ns/op
+Iteration   7: 192.391 ns/op
+
+# Run progress: 11.62% complete, ETA 01:28:45
+# Fork: 2 of 2
+# Warmup Iteration   1: 217.690 ns/op
+# Warmup Iteration   2: 191.948 ns/op
+# Warmup Iteration   3: 197.031 ns/op
+Iteration   1: 260.087 ns/op
+Iteration   2: 282.019 ns/op
+Iteration   3: 203.833 ns/op
+Iteration   4: 191.155 ns/op
+Iteration   5: 198.423 ns/op
+Iteration   6: 200.111 ns/op
+Iteration   7: 199.117 ns/op
+
+
+Result "concatOptimized1":
+  211.499 ±(99.9%) 30.257 ns/op [Average]
+  (min, avg, max) = (191.155, 211.499, 282.019), stdev = 26.822
+  CI (99.9%): [181.241, 241.756] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized1
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 12.12% complete, ETA 01:28:14
+# Fork: 1 of 2
+# Warmup Iteration   1: 230.614 ns/op
+# Warmup Iteration   2: 236.037 ns/op
+# Warmup Iteration   3: 203.338 ns/op
+Iteration   1: 203.508 ns/op
+Iteration   2: 198.838 ns/op
+Iteration   3: 206.961 ns/op
+Iteration   4: 200.313 ns/op
+Iteration   5: 208.729 ns/op
+Iteration   6: 202.948 ns/op
+Iteration   7: 201.760 ns/op
+
+# Run progress: 12.63% complete, ETA 01:27:43
+# Fork: 2 of 2
+# Warmup Iteration   1: 233.939 ns/op
+# Warmup Iteration   2: 205.630 ns/op
+# Warmup Iteration   3: 205.669 ns/op
+Iteration   1: 204.144 ns/op
+Iteration   2: 194.927 ns/op
+Iteration   3: 207.524 ns/op
+Iteration   4: 186.462 ns/op
+Iteration   5: 186.806 ns/op
+Iteration   6: 192.531 ns/op
+Iteration   7: 188.431 ns/op
+
+
+Result "concatOptimized1":
+  198.849 ±(99.9%) 8.727 ns/op [Average]
+  (min, avg, max) = (186.462, 198.849, 208.729), stdev = 7.737
+  CI (99.9%): [190.121, 207.576] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized2
+# Parameters: (arg = Tiny)
+
+# Run progress: 13.13% complete, ETA 01:27:12
+# Fork: 1 of 2
+# Warmup Iteration   1: 61.452 ns/op
+# Warmup Iteration   2: 59.593 ns/op
+# Warmup Iteration   3: 58.646 ns/op
+Iteration   1: 57.908 ns/op
+Iteration   2: 58.068 ns/op
+Iteration   3: 61.166 ns/op
+Iteration   4: 57.901 ns/op
+Iteration   5: 58.339 ns/op
+Iteration   6: 59.524 ns/op
+Iteration   7: 58.171 ns/op
+
+# Run progress: 13.64% complete, ETA 01:26:42
+# Fork: 2 of 2
+# Warmup Iteration   1: 62.943 ns/op
+# Warmup Iteration   2: 59.587 ns/op
+# Warmup Iteration   3: 58.843 ns/op
+Iteration   1: 58.054 ns/op
+Iteration   2: 58.082 ns/op
+Iteration   3: 60.950 ns/op
+Iteration   4: 58.310 ns/op
+Iteration   5: 58.334 ns/op
+Iteration   6: 58.599 ns/op
+Iteration   7: 58.839 ns/op
+
+
+Result "concatOptimized2":
+  58.732 ±(99.9%) 1.212 ns/op [Average]
+  (min, avg, max) = (57.901, 58.732, 61.166), stdev = 1.074
+  CI (99.9%): [57.520, 59.943] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized2
+# Parameters: (arg = VeryShort)
+
+# Run progress: 14.14% complete, ETA 01:26:11
+# Fork: 1 of 2
+# Warmup Iteration   1: 72.052 ns/op
+# Warmup Iteration   2: 73.342 ns/op
+# Warmup Iteration   3: 72.566 ns/op
+Iteration   1: 65.187 ns/op
+Iteration   2: 68.528 ns/op
+Iteration   3: 70.147 ns/op
+Iteration   4: 77.378 ns/op
+Iteration   5: 68.450 ns/op
+Iteration   6: 67.775 ns/op
+Iteration   7: 70.209 ns/op
+
+# Run progress: 14.65% complete, ETA 01:25:40
+# Fork: 2 of 2
+# Warmup Iteration   1: 75.982 ns/op
+# Warmup Iteration   2: 82.958 ns/op
+# Warmup Iteration   3: 74.153 ns/op
+Iteration   1: 67.390 ns/op
+Iteration   2: 66.854 ns/op
+Iteration   3: 66.361 ns/op
+Iteration   4: 68.464 ns/op
+Iteration   5: 69.735 ns/op
+Iteration   6: 71.046 ns/op
+Iteration   7: 73.647 ns/op
+
+
+Result "concatOptimized2":
+  69.369 ±(99.9%) 3.545 ns/op [Average]
+  (min, avg, max) = (65.187, 69.369, 77.378), stdev = 3.143
+  CI (99.9%): [65.824, 72.914] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized2
+# Parameters: (arg = Short)
+
+# Run progress: 15.15% complete, ETA 01:25:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 95.817 ns/op
+# Warmup Iteration   2: 85.356 ns/op
+# Warmup Iteration   3: 84.600 ns/op
+Iteration   1: 82.511 ns/op
+Iteration   2: 84.723 ns/op
+Iteration   3: 83.670 ns/op
+Iteration   4: 84.639 ns/op
+Iteration   5: 83.248 ns/op
+Iteration   6: 82.392 ns/op
+Iteration   7: 83.997 ns/op
+
+# Run progress: 15.66% complete, ETA 01:24:41
+# Fork: 2 of 2
+# Warmup Iteration   1: 88.676 ns/op
+# Warmup Iteration   2: 85.894 ns/op
+# Warmup Iteration   3: 83.078 ns/op
+Iteration   1: 90.436 ns/op
+Iteration   2: 89.069 ns/op
+Iteration   3: 87.297 ns/op
+Iteration   4: 86.836 ns/op
+Iteration   5: 89.436 ns/op
+Iteration   6: 88.946 ns/op
+Iteration   7: 88.203 ns/op
+
+
+Result "concatOptimized2":
+  86.100 ±(99.9%) 3.165 ns/op [Average]
+  (min, avg, max) = (82.392, 86.100, 90.436), stdev = 2.806
+  CI (99.9%): [82.935, 89.266] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized2
+# Parameters: (arg = Medium)
+
+# Run progress: 16.16% complete, ETA 01:24:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 104.152 ns/op
+# Warmup Iteration   2: 96.016 ns/op
+# Warmup Iteration   3: 93.169 ns/op
+Iteration   1: 94.445 ns/op
+Iteration   2: 89.396 ns/op
+Iteration   3: 87.441 ns/op
+Iteration   4: 89.241 ns/op
+Iteration   5: 88.598 ns/op
+Iteration   6: 93.549 ns/op
+Iteration   7: 97.376 ns/op
+
+# Run progress: 16.67% complete, ETA 01:23:40
+# Fork: 2 of 2
+# Warmup Iteration   1: 100.433 ns/op
+# Warmup Iteration   2: 89.065 ns/op
+# Warmup Iteration   3: 91.110 ns/op
+Iteration   1: 91.772 ns/op
+Iteration   2: 89.677 ns/op
+Iteration   3: 88.325 ns/op
+Iteration   4: 90.831 ns/op
+Iteration   5: 88.409 ns/op
+Iteration   6: 88.737 ns/op
+Iteration   7: 89.862 ns/op
+
+
+Result "concatOptimized2":
+  90.547 ±(99.9%) 3.174 ns/op [Average]
+  (min, avg, max) = (87.441, 90.547, 97.376), stdev = 2.813
+  CI (99.9%): [87.373, 93.721] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized2
+# Parameters: (arg = Long)
+
+# Run progress: 17.17% complete, ETA 01:23:09
+# Fork: 1 of 2
+# Warmup Iteration   1: 106.899 ns/op
+# Warmup Iteration   2: 101.551 ns/op
+# Warmup Iteration   3: 101.075 ns/op
+Iteration   1: 104.651 ns/op
+Iteration   2: 104.136 ns/op
+Iteration   3: 102.967 ns/op
+Iteration   4: 106.901 ns/op
+Iteration   5: 103.844 ns/op
+Iteration   6: 103.559 ns/op
+Iteration   7: 106.655 ns/op
+
+# Run progress: 17.68% complete, ETA 01:22:39
+# Fork: 2 of 2
+# Warmup Iteration   1: 109.873 ns/op
+# Warmup Iteration   2: 103.493 ns/op
+# Warmup Iteration   3: 101.335 ns/op
+Iteration   1: 105.555 ns/op
+Iteration   2: 105.328 ns/op
+Iteration   3: 114.656 ns/op
+Iteration   4: 106.243 ns/op
+Iteration   5: 106.521 ns/op
+Iteration   6: 109.928 ns/op
+Iteration   7: 111.476 ns/op
+
+
+Result "concatOptimized2":
+  106.601 ±(99.9%) 3.736 ns/op [Average]
+  (min, avg, max) = (102.967, 106.601, 114.656), stdev = 3.312
+  CI (99.9%): [102.865, 110.338] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized2
+# Parameters: (arg = VeryLong)
+
+# Run progress: 18.18% complete, ETA 01:22:09
+# Fork: 1 of 2
+# Warmup Iteration   1: 345.853 ns/op
+# Warmup Iteration   2: 307.680 ns/op
+# Warmup Iteration   3: 296.912 ns/op
+Iteration   1: 313.570 ns/op
+Iteration   2: 295.563 ns/op
+Iteration   3: 295.632 ns/op
+Iteration   4: 302.155 ns/op
+Iteration   5: 301.059 ns/op
+Iteration   6: 294.460 ns/op
+Iteration   7: 292.193 ns/op
+
+# Run progress: 18.69% complete, ETA 01:21:38
+# Fork: 2 of 2
+# Warmup Iteration   1: 340.143 ns/op
+# Warmup Iteration   2: 299.112 ns/op
+# Warmup Iteration   3: 306.138 ns/op
+Iteration   1: 303.486 ns/op
+Iteration   2: 297.442 ns/op
+Iteration   3: 295.285 ns/op
+Iteration   4: 291.962 ns/op
+Iteration   5: 285.840 ns/op
+Iteration   6: 297.744 ns/op
+Iteration   7: 295.846 ns/op
+
+
+Result "concatOptimized2":
+  297.303 ±(99.9%) 7.316 ns/op [Average]
+  (min, avg, max) = (285.840, 297.303, 313.570), stdev = 6.486
+  CI (99.9%): [289.986, 304.619] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimized2
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 19.19% complete, ETA 01:21:07
+# Fork: 1 of 2
+# Warmup Iteration   1: 318.052 ns/op
+# Warmup Iteration   2: 303.936 ns/op
+# Warmup Iteration   3: 302.725 ns/op
+Iteration   1: 307.433 ns/op
+Iteration   2: 301.745 ns/op
+Iteration   3: 298.310 ns/op
+Iteration   4: 297.489 ns/op
+Iteration   5: 294.948 ns/op
+Iteration   6: 296.210 ns/op
+Iteration   7: 291.433 ns/op
+
+# Run progress: 19.70% complete, ETA 01:20:38
+# Fork: 2 of 2
+# Warmup Iteration   1: 330.008 ns/op
+# Warmup Iteration   2: 296.183 ns/op
+# Warmup Iteration   3: 325.152 ns/op
+Iteration   1: 309.382 ns/op
+Iteration   2: 303.532 ns/op
+Iteration   3: 301.051 ns/op
+Iteration   4: 308.051 ns/op
+Iteration   5: 300.436 ns/op
+Iteration   6: 299.655 ns/op
+Iteration   7: 295.413 ns/op
+
+
+Result "concatOptimized2":
+  300.363 ±(99.9%) 5.991 ns/op [Average]
+  (min, avg, max) = (291.433, 300.363, 309.382), stdev = 5.311
+  CI (99.9%): [294.372, 306.354] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimizedMacros
+# Parameters: (arg = Tiny)
+
+# Run progress: 20.20% complete, ETA 01:20:07
+# Fork: 1 of 2
+# Warmup Iteration   1: 25.136 ns/op
+# Warmup Iteration   2: 32.500 ns/op
+# Warmup Iteration   3: 32.707 ns/op
+Iteration   1: 33.810 ns/op
+Iteration   2: 32.740 ns/op
+Iteration   3: 32.322 ns/op
+Iteration   4: 33.975 ns/op
+Iteration   5: 35.774 ns/op
+Iteration   6: 32.362 ns/op
+Iteration   7: 33.848 ns/op
+
+# Run progress: 20.71% complete, ETA 01:19:37
+# Fork: 2 of 2
+# Warmup Iteration   1: 25.724 ns/op
+# Warmup Iteration   2: 32.344 ns/op
+# Warmup Iteration   3: 34.781 ns/op
+Iteration   1: 35.001 ns/op
+Iteration   2: 32.482 ns/op
+Iteration   3: 35.064 ns/op
+Iteration   4: 39.615 ns/op
+Iteration   5: 33.312 ns/op
+Iteration   6: 34.058 ns/op
+Iteration   7: 33.034 ns/op
+
+
+Result "concatOptimizedMacros":
+  34.100 ±(99.9%) 2.157 ns/op [Average]
+  (min, avg, max) = (32.322, 34.100, 39.615), stdev = 1.912
+  CI (99.9%): [31.943, 36.257] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimizedMacros
+# Parameters: (arg = VeryShort)
+
+# Run progress: 21.21% complete, ETA 01:19:06
+# Fork: 1 of 2
+# Warmup Iteration   1: 27.432 ns/op
+# Warmup Iteration   2: 33.999 ns/op
+# Warmup Iteration   3: 33.740 ns/op
+Iteration   1: 35.077 ns/op
+Iteration   2: 33.274 ns/op
+Iteration   3: 40.989 ns/op
+Iteration   4: 34.127 ns/op
+Iteration   5: 33.741 ns/op
+Iteration   6: 34.519 ns/op
+Iteration   7: 33.712 ns/op
+
+# Run progress: 21.72% complete, ETA 01:18:37
+# Fork: 2 of 2
+# Warmup Iteration   1: 27.301 ns/op
+# Warmup Iteration   2: 33.575 ns/op
+# Warmup Iteration   3: 33.858 ns/op
+Iteration   1: 33.716 ns/op
+Iteration   2: 34.868 ns/op
+Iteration   3: 33.268 ns/op
+Iteration   4: 33.433 ns/op
+Iteration   5: 33.507 ns/op
+Iteration   6: 34.758 ns/op
+Iteration   7: 33.060 ns/op
+
+
+Result "concatOptimizedMacros":
+  34.432 ±(99.9%) 2.251 ns/op [Average]
+  (min, avg, max) = (33.060, 34.432, 40.989), stdev = 1.995
+  CI (99.9%): [32.181, 36.683] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimizedMacros
+# Parameters: (arg = Short)
+
+# Run progress: 22.22% complete, ETA 01:18:06
+# Fork: 1 of 2
+# Warmup Iteration   1: 50.361 ns/op
+# Warmup Iteration   2: 42.269 ns/op
+# Warmup Iteration   3: 42.160 ns/op
+Iteration   1: 45.444 ns/op
+Iteration   2: 41.743 ns/op
+Iteration   3: 40.116 ns/op
+Iteration   4: 45.792 ns/op
+Iteration   5: 43.412 ns/op
+Iteration   6: 41.673 ns/op
+Iteration   7: 40.200 ns/op
+
+# Run progress: 22.73% complete, ETA 01:17:36
+# Fork: 2 of 2
+# Warmup Iteration   1: 48.150 ns/op
+# Warmup Iteration   2: 41.046 ns/op
+# Warmup Iteration   3: 40.325 ns/op
+Iteration   1: 44.578 ns/op
+Iteration   2: 45.309 ns/op
+Iteration   3: 45.025 ns/op
+Iteration   4: 49.544 ns/op
+Iteration   5: 43.153 ns/op
+Iteration   6: 40.026 ns/op
+Iteration   7: 39.714 ns/op
+
+
+Result "concatOptimizedMacros":
+  43.266 ±(99.9%) 3.234 ns/op [Average]
+  (min, avg, max) = (39.714, 43.266, 49.544), stdev = 2.867
+  CI (99.9%): [40.032, 46.501] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimizedMacros
+# Parameters: (arg = Medium)
+
+# Run progress: 23.23% complete, ETA 01:17:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 49.233 ns/op
+# Warmup Iteration   2: 46.198 ns/op
+# Warmup Iteration   3: 45.385 ns/op
+Iteration   1: 43.050 ns/op
+Iteration   2: 42.524 ns/op
+Iteration   3: 42.539 ns/op
+Iteration   4: 45.118 ns/op
+Iteration   5: 47.982 ns/op
+Iteration   6: 48.453 ns/op
+Iteration   7: 44.768 ns/op
+
+# Run progress: 23.74% complete, ETA 01:16:36
+# Fork: 2 of 2
+# Warmup Iteration   1: 53.233 ns/op
+# Warmup Iteration   2: 46.506 ns/op
+# Warmup Iteration   3: 46.029 ns/op
+Iteration   1: 45.461 ns/op
+Iteration   2: 45.956 ns/op
+Iteration   3: 42.980 ns/op
+Iteration   4: 42.032 ns/op
+Iteration   5: 42.685 ns/op
+Iteration   6: 41.722 ns/op
+Iteration   7: 41.714 ns/op
+
+
+Result "concatOptimizedMacros":
+  44.070 ±(99.9%) 2.536 ns/op [Average]
+  (min, avg, max) = (41.714, 44.070, 48.453), stdev = 2.248
+  CI (99.9%): [41.534, 46.606] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimizedMacros
+# Parameters: (arg = Long)
+
+# Run progress: 24.24% complete, ETA 01:16:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 58.081 ns/op
+# Warmup Iteration   2: 51.749 ns/op
+# Warmup Iteration   3: 52.105 ns/op
+Iteration   1: 53.894 ns/op
+Iteration   2: 53.877 ns/op
+Iteration   3: 56.229 ns/op
+Iteration   4: 53.172 ns/op
+Iteration   5: 56.289 ns/op
+Iteration   6: 52.714 ns/op
+Iteration   7: 54.714 ns/op
+
+# Run progress: 24.75% complete, ETA 01:15:34
+# Fork: 2 of 2
+# Warmup Iteration   1: 62.656 ns/op
+# Warmup Iteration   2: 58.872 ns/op
+# Warmup Iteration   3: 53.493 ns/op
+Iteration   1: 58.175 ns/op
+Iteration   2: 57.213 ns/op
+Iteration   3: 55.281 ns/op
+Iteration   4: 57.687 ns/op
+Iteration   5: 57.301 ns/op
+Iteration   6: 56.669 ns/op
+Iteration   7: 56.279 ns/op
+
+
+Result "concatOptimizedMacros":
+  55.678 ±(99.9%) 1.975 ns/op [Average]
+  (min, avg, max) = (52.714, 55.678, 58.175), stdev = 1.751
+  CI (99.9%): [53.703, 57.654] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimizedMacros
+# Parameters: (arg = VeryLong)
+
+# Run progress: 25.25% complete, ETA 01:15:04
+# Fork: 1 of 2
+# Warmup Iteration   1: 210.738 ns/op
+# Warmup Iteration   2: 178.397 ns/op
+# Warmup Iteration   3: 182.803 ns/op
+Iteration   1: 182.497 ns/op
+Iteration   2: 179.304 ns/op
+Iteration   3: 180.963 ns/op
+Iteration   4: 185.286 ns/op
+Iteration   5: 189.523 ns/op
+Iteration   6: 178.336 ns/op
+Iteration   7: 176.150 ns/op
+
+# Run progress: 25.76% complete, ETA 01:14:33
+# Fork: 2 of 2
+# Warmup Iteration   1: 209.820 ns/op
+# Warmup Iteration   2: 180.930 ns/op
+# Warmup Iteration   3: 175.688 ns/op
+Iteration   1: 186.834 ns/op
+Iteration   2: 185.669 ns/op
+Iteration   3: 178.304 ns/op
+Iteration   4: 184.710 ns/op
+Iteration   5: 187.441 ns/op
+Iteration   6: 178.446 ns/op
+Iteration   7: 193.089 ns/op
+
+
+Result "concatOptimizedMacros":
+  183.325 ±(99.9%) 5.615 ns/op [Average]
+  (min, avg, max) = (176.150, 183.325, 193.089), stdev = 4.977
+  CI (99.9%): [177.710, 188.940] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.concatOptimizedMacros
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 26.26% complete, ETA 01:14:02
+# Fork: 1 of 2
+# Warmup Iteration   1: 259.240 ns/op
+# Warmup Iteration   2: 181.362 ns/op
+# Warmup Iteration   3: 178.754 ns/op
+Iteration   1: 184.261 ns/op
+Iteration   2: 186.195 ns/op
+Iteration   3: 178.254 ns/op
+Iteration   4: 180.208 ns/op
+Iteration   5: 179.156 ns/op
+Iteration   6: 173.124 ns/op
+Iteration   7: 178.720 ns/op
+
+# Run progress: 26.77% complete, ETA 01:13:33
+# Fork: 2 of 2
+# Warmup Iteration   1: 204.338 ns/op
+# Warmup Iteration   2: 180.006 ns/op
+# Warmup Iteration   3: 176.015 ns/op
+Iteration   1: 177.670 ns/op
+Iteration   2: 178.382 ns/op
+Iteration   3: 172.993 ns/op
+Iteration   4: 173.237 ns/op
+Iteration   5: 176.832 ns/op
+Iteration   6: 173.579 ns/op
+Iteration   7: 173.254 ns/op
+
+
+Result "concatOptimizedMacros":
+  177.562 ±(99.9%) 4.700 ns/op [Average]
+  (min, avg, max) = (172.993, 177.562, 186.195), stdev = 4.167
+  CI (99.9%): [172.861, 182.262] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.fInterpolator
+# Parameters: (arg = Tiny)
+
+# Run progress: 27.27% complete, ETA 01:13:02
+# Fork: 1 of 2
+# Warmup Iteration   1: 1187.269 ns/op
+# Warmup Iteration   2: 995.928 ns/op
+# Warmup Iteration   3: 989.614 ns/op
+Iteration   1: 993.926 ns/op
+Iteration   2: 1019.827 ns/op
+Iteration   3: 989.121 ns/op
+Iteration   4: 992.854 ns/op
+Iteration   5: 1005.648 ns/op
+Iteration   6: 992.667 ns/op
+Iteration   7: 995.693 ns/op
+
+# Run progress: 27.78% complete, ETA 01:12:32
+# Fork: 2 of 2
+# Warmup Iteration   1: 1134.458 ns/op
+# Warmup Iteration   2: 1006.009 ns/op
+# Warmup Iteration   3: 977.137 ns/op
+Iteration   1: 976.705 ns/op
+Iteration   2: 998.326 ns/op
+Iteration   3: 980.473 ns/op
+Iteration   4: 981.943 ns/op
+Iteration   5: 1002.444 ns/op
+Iteration   6: 979.279 ns/op
+Iteration   7: 984.682 ns/op
+
+
+Result "fInterpolator":
+  992.399 ±(99.9%) 13.339 ns/op [Average]
+  (min, avg, max) = (976.705, 992.399, 1019.827), stdev = 11.824
+  CI (99.9%): [979.061, 1005.738] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.fInterpolator
+# Parameters: (arg = VeryShort)
+
+# Run progress: 28.28% complete, ETA 01:12:01
+# Fork: 1 of 2
+# Warmup Iteration   1: 1246.658 ns/op
+# Warmup Iteration   2: 1004.749 ns/op
+# Warmup Iteration   3: 1014.326 ns/op
+Iteration   1: 985.135 ns/op
+Iteration   2: 1018.144 ns/op
+Iteration   3: 984.388 ns/op
+Iteration   4: 989.877 ns/op
+Iteration   5: 1004.889 ns/op
+Iteration   6: 986.890 ns/op
+Iteration   7: 982.942 ns/op
+
+# Run progress: 28.79% complete, ETA 01:11:30
+# Fork: 2 of 2
+# Warmup Iteration   1: 1220.809 ns/op
+# Warmup Iteration   2: 1004.439 ns/op
+# Warmup Iteration   3: 985.285 ns/op
+Iteration   1: 986.219 ns/op
+Iteration   2: 990.544 ns/op
+Iteration   3: 996.732 ns/op
+Iteration   4: 982.943 ns/op
+Iteration   5: 984.440 ns/op
+Iteration   6: 1004.897 ns/op
+Iteration   7: 988.732 ns/op
+
+
+Result "fInterpolator":
+  991.912 ±(99.9%) 11.878 ns/op [Average]
+  (min, avg, max) = (982.942, 991.912, 1018.144), stdev = 10.530
+  CI (99.9%): [980.034, 1003.790] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.fInterpolator
+# Parameters: (arg = Short)
+
+# Run progress: 29.29% complete, ETA 01:10:59
+# Fork: 1 of 2
+# Warmup Iteration   1: 1219.411 ns/op
+# Warmup Iteration   2: 1019.533 ns/op
+# Warmup Iteration   3: 1007.766 ns/op
+Iteration   1: 1007.339 ns/op
+Iteration   2: 1003.938 ns/op
+Iteration   3: 1026.651 ns/op
+Iteration   4: 1002.071 ns/op
+Iteration   5: 1006.271 ns/op
+Iteration   6: 1013.242 ns/op
+Iteration   7: 1014.530 ns/op
+
+# Run progress: 29.80% complete, ETA 01:10:29
+# Fork: 2 of 2
+# Warmup Iteration   1: 1189.340 ns/op
+# Warmup Iteration   2: 1000.279 ns/op
+# Warmup Iteration   3: 1022.995 ns/op
+Iteration   1: 1005.137 ns/op
+Iteration   2: 1006.465 ns/op
+Iteration   3: 1027.227 ns/op
+Iteration   4: 1005.418 ns/op
+Iteration   5: 1022.116 ns/op
+Iteration   6: 1006.215 ns/op
+Iteration   7: 1018.784 ns/op
+
+
+Result "fInterpolator":
+  1011.815 ±(99.9%) 9.769 ns/op [Average]
+  (min, avg, max) = (1002.071, 1011.815, 1027.227), stdev = 8.660
+  CI (99.9%): [1002.045, 1021.584] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.fInterpolator
+# Parameters: (arg = Medium)
+
+# Run progress: 30.30% complete, ETA 01:09:58
+# Fork: 1 of 2
+# Warmup Iteration   1: 1237.657 ns/op
+# Warmup Iteration   2: 1043.565 ns/op
+# Warmup Iteration   3: 1067.290 ns/op
+Iteration   1: 1052.537 ns/op
+Iteration   2: 1047.650 ns/op
+Iteration   3: 1051.114 ns/op
+Iteration   4: 1075.232 ns/op
+Iteration   5: 1053.374 ns/op
+Iteration   6: 1050.268 ns/op
+Iteration   7: 1105.067 ns/op
+
+# Run progress: 30.81% complete, ETA 01:09:28
+# Fork: 2 of 2
+# Warmup Iteration   1: 1273.207 ns/op
+# Warmup Iteration   2: 1023.272 ns/op
+# Warmup Iteration   3: 1036.467 ns/op
+Iteration   1: 1063.403 ns/op
+Iteration   2: 1025.892 ns/op
+Iteration   3: 1024.788 ns/op
+Iteration   4: 1046.602 ns/op
+Iteration   5: 1024.042 ns/op
+Iteration   6: 1025.580 ns/op
+Iteration   7: 1057.198 ns/op
+
+
+Result "fInterpolator":
+  1050.196 ±(99.9%) 25.075 ns/op [Average]
+  (min, avg, max) = (1024.042, 1050.196, 1105.067), stdev = 22.228
+  CI (99.9%): [1025.122, 1075.271] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.fInterpolator
+# Parameters: (arg = Long)
+
+# Run progress: 31.31% complete, ETA 01:08:57
+# Fork: 1 of 2
+# Warmup Iteration   1: 1259.725 ns/op
+# Warmup Iteration   2: 1057.712 ns/op
+# Warmup Iteration   3: 1067.103 ns/op
+Iteration   1: 1101.110 ns/op
+Iteration   2: 1070.512 ns/op
+Iteration   3: 1074.552 ns/op
+Iteration   4: 1115.510 ns/op
+Iteration   5: 1093.235 ns/op
+Iteration   6: 1073.113 ns/op
+Iteration   7: 1100.881 ns/op
+
+# Run progress: 31.82% complete, ETA 01:08:27
+# Fork: 2 of 2
+# Warmup Iteration   1: 1325.239 ns/op
+# Warmup Iteration   2: 1068.278 ns/op
+# Warmup Iteration   3: 1062.974 ns/op
+Iteration   1: 1104.581 ns/op
+Iteration   2: 1084.287 ns/op
+Iteration   3: 1072.646 ns/op
+Iteration   4: 1099.073 ns/op
+Iteration   5: 1078.198 ns/op
+Iteration   6: 1062.857 ns/op
+Iteration   7: 1069.801 ns/op
+
+
+Result "fInterpolator":
+  1085.740 ±(99.9%) 18.418 ns/op [Average]
+  (min, avg, max) = (1062.857, 1085.740, 1115.510), stdev = 16.327
+  CI (99.9%): [1067.322, 1104.157] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.fInterpolator
+# Parameters: (arg = VeryLong)
+
+# Run progress: 32.32% complete, ETA 01:07:56
+# Fork: 1 of 2
+# Warmup Iteration   1: 1672.944 ns/op
+# Warmup Iteration   2: 1344.957 ns/op
+# Warmup Iteration   3: 1331.858 ns/op
+Iteration   1: 1366.450 ns/op
+Iteration   2: 1335.114 ns/op
+Iteration   3: 1346.098 ns/op
+Iteration   4: 1368.048 ns/op
+Iteration   5: 1338.853 ns/op
+Iteration   6: 1331.727 ns/op
+Iteration   7: 1382.003 ns/op
+
+# Run progress: 32.83% complete, ETA 01:07:26
+# Fork: 2 of 2
+# Warmup Iteration   1: 1605.834 ns/op
+# Warmup Iteration   2: 1333.879 ns/op
+# Warmup Iteration   3: 1335.036 ns/op
+Iteration   1: 1370.855 ns/op
+Iteration   2: 1335.187 ns/op
+Iteration   3: 1335.601 ns/op
+Iteration   4: 1372.885 ns/op
+Iteration   5: 1332.596 ns/op
+Iteration   6: 1334.372 ns/op
+Iteration   7: 1439.258 ns/op
+
+
+Result "fInterpolator":
+  1356.361 ±(99.9%) 33.768 ns/op [Average]
+  (min, avg, max) = (1331.727, 1356.361, 1439.258), stdev = 29.934
+  CI (99.9%): [1322.593, 1390.128] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.fInterpolator
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 33.33% complete, ETA 01:06:55
+# Fork: 1 of 2
+# Warmup Iteration   1: 1656.278 ns/op
+# Warmup Iteration   2: 1350.155 ns/op
+# Warmup Iteration   3: 1441.217 ns/op
+Iteration   1: 1449.442 ns/op
+Iteration   2: 1385.562 ns/op
+Iteration   3: 1515.275 ns/op
+Iteration   4: 1437.446 ns/op
+Iteration   5: 1529.048 ns/op
+Iteration   6: 1521.065 ns/op
+Iteration   7: 1468.869 ns/op
+
+# Run progress: 33.84% complete, ETA 01:06:25
+# Fork: 2 of 2
+# Warmup Iteration   1: 1769.340 ns/op
+# Warmup Iteration   2: 1464.112 ns/op
+# Warmup Iteration   3: 1439.243 ns/op
+Iteration   1: 1460.871 ns/op
+Iteration   2: 1427.725 ns/op
+Iteration   3: 1477.735 ns/op
+Iteration   4: 1430.076 ns/op
+Iteration   5: 1394.053 ns/op
+Iteration   6: 1395.370 ns/op
+Iteration   7: 1353.015 ns/op
+
+
+Result "fInterpolator":
+  1446.111 ±(99.9%) 60.438 ns/op [Average]
+  (min, avg, max) = (1353.015, 1446.111, 1529.048), stdev = 53.576
+  CI (99.9%): [1385.673, 1506.548] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.javaConcat
+# Parameters: (arg = Tiny)
+
+# Run progress: 34.34% complete, ETA 01:05:54
+# Fork: 1 of 2
+# Warmup Iteration   1: 37.742 ns/op
+# Warmup Iteration   2: 34.975 ns/op
+# Warmup Iteration   3: 32.522 ns/op
+Iteration   1: 32.530 ns/op
+Iteration   2: 36.584 ns/op
+Iteration   3: 31.910 ns/op
+Iteration   4: 31.604 ns/op
+Iteration   5: 32.106 ns/op
+Iteration   6: 32.413 ns/op
+Iteration   7: 35.802 ns/op
+
+# Run progress: 34.85% complete, ETA 01:05:24
+# Fork: 2 of 2
+# Warmup Iteration   1: 38.829 ns/op
+# Warmup Iteration   2: 33.746 ns/op
+# Warmup Iteration   3: 33.300 ns/op
+Iteration   1: 33.059 ns/op
+Iteration   2: 44.843 ns/op
+Iteration   3: 31.437 ns/op
+Iteration   4: 32.177 ns/op
+Iteration   5: 31.926 ns/op
+Iteration   6: 35.937 ns/op
+Iteration   7: 38.299 ns/op
+
+
+Result "javaConcat":
+  34.331 ±(99.9%) 4.217 ns/op [Average]
+  (min, avg, max) = (31.437, 34.331, 44.843), stdev = 3.738
+  CI (99.9%): [30.114, 38.547] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.javaConcat
+# Parameters: (arg = VeryShort)
+
+# Run progress: 35.35% complete, ETA 01:04:54
+# Fork: 1 of 2
+# Warmup Iteration   1: 98.529 ns/op
+# Warmup Iteration   2: 78.522 ns/op
+# Warmup Iteration   3: 68.183 ns/op
+Iteration   1: 61.359 ns/op
+Iteration   2: 58.629 ns/op
+Iteration   3: 71.431 ns/op
+Iteration   4: 61.395 ns/op
+Iteration   5: 60.348 ns/op
+Iteration   6: 58.175 ns/op
+Iteration   7: 58.106 ns/op
+
+# Run progress: 35.86% complete, ETA 01:04:23
+# Fork: 2 of 2
+# Warmup Iteration   1: 77.474 ns/op
+# Warmup Iteration   2: 64.718 ns/op
+# Warmup Iteration   3: 58.791 ns/op
+Iteration   1: 62.183 ns/op
+Iteration   2: 56.782 ns/op
+Iteration   3: 58.438 ns/op
+Iteration   4: 57.072 ns/op
+Iteration   5: 59.244 ns/op
+Iteration   6: 70.935 ns/op
+Iteration   7: 69.339 ns/op
+
+
+Result "javaConcat":
+  61.674 ±(99.9%) 5.749 ns/op [Average]
+  (min, avg, max) = (56.782, 61.674, 71.431), stdev = 5.096
+  CI (99.9%): [55.925, 67.423] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.javaConcat
+# Parameters: (arg = Short)
+
+# Run progress: 36.36% complete, ETA 01:03:53
+# Fork: 1 of 2
+# Warmup Iteration   1: 92.656 ns/op
+# Warmup Iteration   2: 70.642 ns/op
+# Warmup Iteration   3: 74.957 ns/op
+Iteration   1: 77.290 ns/op
+Iteration   2: 75.347 ns/op
+Iteration   3: 70.482 ns/op
+Iteration   4: 69.184 ns/op
+Iteration   5: 71.079 ns/op
+Iteration   6: 67.240 ns/op
+Iteration   7: 65.544 ns/op
+
+# Run progress: 36.87% complete, ETA 01:03:23
+# Fork: 2 of 2
+# Warmup Iteration   1: 88.975 ns/op
+# Warmup Iteration   2: 61.929 ns/op
+# Warmup Iteration   3: 61.214 ns/op
+Iteration   1: 63.297 ns/op
+Iteration   2: 61.057 ns/op
+Iteration   3: 60.596 ns/op
+Iteration   4: 60.767 ns/op
+Iteration   5: 61.725 ns/op
+Iteration   6: 61.488 ns/op
+Iteration   7: 59.958 ns/op
+
+
+Result "javaConcat":
+  66.075 ±(99.9%) 6.533 ns/op [Average]
+  (min, avg, max) = (59.958, 66.075, 77.290), stdev = 5.791
+  CI (99.9%): [59.543, 72.608] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.javaConcat
+# Parameters: (arg = Medium)
+
+# Run progress: 37.37% complete, ETA 01:02:52
+# Fork: 1 of 2
+# Warmup Iteration   1: 97.255 ns/op
+# Warmup Iteration   2: 86.471 ns/op
+# Warmup Iteration   3: 85.596 ns/op
+Iteration   1: 89.997 ns/op
+Iteration   2: 92.118 ns/op
+Iteration   3: 86.002 ns/op
+Iteration   4: 92.837 ns/op
+Iteration   5: 90.243 ns/op
+Iteration   6: 89.840 ns/op
+Iteration   7: 86.198 ns/op
+
+# Run progress: 37.88% complete, ETA 01:02:22
+# Fork: 2 of 2
+# Warmup Iteration   1: 100.058 ns/op
+# Warmup Iteration   2: 87.740 ns/op
+# Warmup Iteration   3: 88.137 ns/op
+Iteration   1: 87.959 ns/op
+Iteration   2: 87.357 ns/op
+Iteration   3: 86.001 ns/op
+Iteration   4: 88.751 ns/op
+Iteration   5: 89.195 ns/op
+Iteration   6: 94.577 ns/op
+Iteration   7: 87.680 ns/op
+
+
+Result "javaConcat":
+  89.197 ±(99.9%) 2.964 ns/op [Average]
+  (min, avg, max) = (86.001, 89.197, 94.577), stdev = 2.627
+  CI (99.9%): [86.233, 92.160] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.javaConcat
+# Parameters: (arg = Long)
+
+# Run progress: 38.38% complete, ETA 01:01:51
+# Fork: 1 of 2
+# Warmup Iteration   1: 159.971 ns/op
+# Warmup Iteration   2: 131.007 ns/op
+# Warmup Iteration   3: 123.874 ns/op
+Iteration   1: 127.085 ns/op
+Iteration   2: 123.642 ns/op
+Iteration   3: 116.528 ns/op
+Iteration   4: 115.713 ns/op
+Iteration   5: 119.246 ns/op
+Iteration   6: 117.823 ns/op
+Iteration   7: 112.007 ns/op
+
+# Run progress: 38.89% complete, ETA 01:01:21
+# Fork: 2 of 2
+# Warmup Iteration   1: 151.890 ns/op
+# Warmup Iteration   2: 114.461 ns/op
+# Warmup Iteration   3: 113.648 ns/op
+Iteration   1: 117.199 ns/op
+Iteration   2: 116.977 ns/op
+Iteration   3: 122.695 ns/op
+Iteration   4: 116.115 ns/op
+Iteration   5: 118.936 ns/op
+Iteration   6: 120.384 ns/op
+Iteration   7: 114.761 ns/op
+
+
+Result "javaConcat":
+  118.508 ±(99.9%) 4.425 ns/op [Average]
+  (min, avg, max) = (112.007, 118.508, 127.085), stdev = 3.922
+  CI (99.9%): [114.083, 122.933] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.javaConcat
+# Parameters: (arg = VeryLong)
+
+# Run progress: 39.39% complete, ETA 01:00:50
+# Fork: 1 of 2
+# Warmup Iteration   1: 649.294 ns/op
+# Warmup Iteration   2: 524.055 ns/op
+# Warmup Iteration   3: 514.047 ns/op
+Iteration   1: 510.868 ns/op
+Iteration   2: 545.231 ns/op
+Iteration   3: 541.447 ns/op
+Iteration   4: 567.404 ns/op
+Iteration   5: 690.315 ns/op
+Iteration   6: 656.932 ns/op
+Iteration   7: 568.686 ns/op
+
+# Run progress: 39.90% complete, ETA 01:00:20
+# Fork: 2 of 2
+# Warmup Iteration   1: 573.646 ns/op
+# Warmup Iteration   2: 513.021 ns/op
+# Warmup Iteration   3: 502.163 ns/op
+Iteration   1: 516.100 ns/op
+Iteration   2: 543.366 ns/op
+Iteration   3: 527.635 ns/op
+Iteration   4: 568.428 ns/op
+Iteration   5: 755.065 ns/op
+Iteration   6: 723.559 ns/op
+Iteration   7: 669.257 ns/op
+
+
+Result "javaConcat":
+  598.878 ±(99.9%) 93.014 ns/op [Average]
+  (min, avg, max) = (510.868, 598.878, 755.065), stdev = 82.455
+  CI (99.9%): [505.864, 691.893] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.javaConcat
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 40.40% complete, ETA 00:59:49
+# Fork: 1 of 2
+# Warmup Iteration   1: 582.342 ns/op
+# Warmup Iteration   2: 531.907 ns/op
+# Warmup Iteration   3: 518.410 ns/op
+Iteration   1: 520.055 ns/op
+Iteration   2: 514.404 ns/op
+Iteration   3: 534.934 ns/op
+Iteration   4: 546.079 ns/op
+Iteration   5: 556.074 ns/op
+Iteration   6: 551.939 ns/op
+Iteration   7: 509.943 ns/op
+
+# Run progress: 40.91% complete, ETA 00:59:20
+# Fork: 2 of 2
+# Warmup Iteration   1: 593.294 ns/op
+# Warmup Iteration   2: 524.267 ns/op
+# Warmup Iteration   3: 501.042 ns/op
+Iteration   1: 570.508 ns/op
+Iteration   2: 628.211 ns/op
+Iteration   3: 555.065 ns/op
+Iteration   4: 517.557 ns/op
+Iteration   5: 529.161 ns/op
+Iteration   6: 537.112 ns/op
+Iteration   7: 508.937 ns/op
+
+
+Result "javaConcat":
+  541.427 ±(99.9%) 35.569 ns/op [Average]
+  (min, avg, max) = (508.937, 541.427, 628.211), stdev = 31.531
+  CI (99.9%): [505.858, 576.996] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.messageFormat
+# Parameters: (arg = Tiny)
+
+# Run progress: 41.41% complete, ETA 00:58:49
+# Fork: 1 of 2
+# Warmup Iteration   1: 1498.931 ns/op
+# Warmup Iteration   2: 1067.268 ns/op
+# Warmup Iteration   3: 974.226 ns/op
+Iteration   1: 1136.704 ns/op
+Iteration   2: 955.769 ns/op
+Iteration   3: 982.089 ns/op
+Iteration   4: 950.276 ns/op
+Iteration   5: 938.525 ns/op
+Iteration   6: 974.080 ns/op
+Iteration   7: 928.319 ns/op
+
+# Run progress: 41.92% complete, ETA 00:58:18
+# Fork: 2 of 2
+# Warmup Iteration   1: 1575.538 ns/op
+# Warmup Iteration   2: 1072.406 ns/op
+# Warmup Iteration   3: 948.831 ns/op
+Iteration   1: 947.850 ns/op
+Iteration   2: 945.171 ns/op
+Iteration   3: 963.252 ns/op
+Iteration   4: 946.082 ns/op
+Iteration   5: 953.519 ns/op
+Iteration   6: 1052.796 ns/op
+Iteration   7: 1084.195 ns/op
+
+
+Result "messageFormat":
+  982.759 ±(99.9%) 70.576 ns/op [Average]
+  (min, avg, max) = (928.319, 982.759, 1136.704), stdev = 62.564
+  CI (99.9%): [912.183, 1053.335] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.messageFormat
+# Parameters: (arg = VeryShort)
+
+# Run progress: 42.42% complete, ETA 00:57:48
+# Fork: 1 of 2
+# Warmup Iteration   1: 1777.637 ns/op
+# Warmup Iteration   2: 1075.289 ns/op
+# Warmup Iteration   3: 1117.650 ns/op
+Iteration   1: 1081.411 ns/op
+Iteration   2: 1011.965 ns/op
+Iteration   3: 966.326 ns/op
+Iteration   4: 1018.691 ns/op
+Iteration   5: 1031.033 ns/op
+Iteration   6: 1042.597 ns/op
+Iteration   7: 1029.707 ns/op
+
+# Run progress: 42.93% complete, ETA 00:57:18
+# Fork: 2 of 2
+# Warmup Iteration   1: 1664.198 ns/op
+# Warmup Iteration   2: 1158.593 ns/op
+# Warmup Iteration   3: 972.946 ns/op
+Iteration   1: 963.894 ns/op
+Iteration   2: 994.238 ns/op
+Iteration   3: 988.683 ns/op
+Iteration   4: 996.558 ns/op
+Iteration   5: 1002.508 ns/op
+Iteration   6: 999.505 ns/op
+Iteration   7: 970.219 ns/op
+
+
+Result "messageFormat":
+  1006.953 ±(99.9%) 36.497 ns/op [Average]
+  (min, avg, max) = (963.894, 1006.953, 1081.411), stdev = 32.354
+  CI (99.9%): [970.456, 1043.450] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.messageFormat
+# Parameters: (arg = Short)
+
+# Run progress: 43.43% complete, ETA 00:56:47
+# Fork: 1 of 2
+# Warmup Iteration   1: 1632.702 ns/op
+# Warmup Iteration   2: 1134.981 ns/op
+# Warmup Iteration   3: 978.450 ns/op
+Iteration   1: 978.703 ns/op
+Iteration   2: 1016.990 ns/op
+Iteration   3: 993.781 ns/op
+Iteration   4: 992.794 ns/op
+Iteration   5: 1003.282 ns/op
+Iteration   6: 1000.757 ns/op
+Iteration   7: 975.760 ns/op
+
+# Run progress: 43.94% complete, ETA 00:56:17
+# Fork: 2 of 2
+# Warmup Iteration   1: 1616.936 ns/op
+# Warmup Iteration   2: 1306.495 ns/op
+# Warmup Iteration   3: 1173.643 ns/op
+Iteration   1: 1053.450 ns/op
+Iteration   2: 986.924 ns/op
+Iteration   3: 994.676 ns/op
+Iteration   4: 987.214 ns/op
+Iteration   5: 983.252 ns/op
+Iteration   6: 1008.841 ns/op
+Iteration   7: 998.677 ns/op
+
+
+Result "messageFormat":
+  998.222 ±(99.9%) 22.051 ns/op [Average]
+  (min, avg, max) = (975.760, 998.222, 1053.450), stdev = 19.548
+  CI (99.9%): [976.170, 1020.273] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.messageFormat
+# Parameters: (arg = Medium)
+
+# Run progress: 44.44% complete, ETA 00:55:46
+# Fork: 1 of 2
+# Warmup Iteration   1: 1652.886 ns/op
+# Warmup Iteration   2: 1159.715 ns/op
+# Warmup Iteration   3: 1043.734 ns/op
+Iteration   1: 1099.127 ns/op
+Iteration   2: 1032.723 ns/op
+Iteration   3: 1080.981 ns/op
+Iteration   4: 1129.682 ns/op
+Iteration   5: 1037.971 ns/op
+Iteration   6: 1059.319 ns/op
+Iteration   7: 1040.232 ns/op
+
+# Run progress: 44.95% complete, ETA 00:55:16
+# Fork: 2 of 2
+# Warmup Iteration   1: 1653.947 ns/op
+# Warmup Iteration   2: 1177.684 ns/op
+# Warmup Iteration   3: 1067.854 ns/op
+Iteration   1: 1066.433 ns/op
+Iteration   2: 1044.935 ns/op
+Iteration   3: 1097.279 ns/op
+Iteration   4: 1047.169 ns/op
+Iteration   5: 1025.560 ns/op
+Iteration   6: 1053.091 ns/op
+Iteration   7: 1026.342 ns/op
+
+
+Result "messageFormat":
+  1060.060 ±(99.9%) 35.170 ns/op [Average]
+  (min, avg, max) = (1025.560, 1060.060, 1129.682), stdev = 31.178
+  CI (99.9%): [1024.890, 1095.231] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.messageFormat
+# Parameters: (arg = Long)
+
+# Run progress: 45.45% complete, ETA 00:54:45
+# Fork: 1 of 2
+# Warmup Iteration   1: 1695.901 ns/op
+# Warmup Iteration   2: 1221.213 ns/op
+# Warmup Iteration   3: 1103.258 ns/op
+Iteration   1: 1117.599 ns/op
+Iteration   2: 1103.365 ns/op
+Iteration   3: 1208.631 ns/op
+Iteration   4: 1149.529 ns/op
+Iteration   5: 1094.943 ns/op
+Iteration   6: 1123.772 ns/op
+Iteration   7: 1105.522 ns/op
+
+# Run progress: 45.96% complete, ETA 00:54:15
+# Fork: 2 of 2
+# Warmup Iteration   1: 1677.117 ns/op
+# Warmup Iteration   2: 1217.048 ns/op
+# Warmup Iteration   3: 1077.508 ns/op
+Iteration   1: 1086.194 ns/op
+Iteration   2: 1062.732 ns/op
+Iteration   3: 1091.078 ns/op
+Iteration   4: 1085.998 ns/op
+Iteration   5: 1120.470 ns/op
+Iteration   6: 1117.197 ns/op
+Iteration   7: 1162.707 ns/op
+
+
+Result "messageFormat":
+  1116.410 ±(99.9%) 41.892 ns/op [Average]
+  (min, avg, max) = (1062.732, 1116.410, 1208.631), stdev = 37.136
+  CI (99.9%): [1074.518, 1158.302] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.messageFormat
+# Parameters: (arg = VeryLong)
+
+# Run progress: 46.46% complete, ETA 00:53:44
+# Fork: 1 of 2
+# Warmup Iteration   1: 2464.084 ns/op
+# Warmup Iteration   2: 1553.265 ns/op
+# Warmup Iteration   3: 1474.032 ns/op
+Iteration   1: 1468.875 ns/op
+Iteration   2: 1521.618 ns/op
+Iteration   3: 1570.939 ns/op
+Iteration   4: 1447.105 ns/op
+Iteration   5: 1487.120 ns/op
+Iteration   6: 1557.640 ns/op
+Iteration   7: 1445.819 ns/op
+
+# Run progress: 46.97% complete, ETA 00:53:14
+# Fork: 2 of 2
+# Warmup Iteration   1: 2262.714 ns/op
+# Warmup Iteration   2: 1592.971 ns/op
+# Warmup Iteration   3: 1496.708 ns/op
+Iteration   1: 1491.454 ns/op
+Iteration   2: 1441.773 ns/op
+Iteration   3: 1468.448 ns/op
+Iteration   4: 1390.487 ns/op
+Iteration   5: 1367.149 ns/op
+Iteration   6: 1461.666 ns/op
+Iteration   7: 1420.431 ns/op
+
+
+Result "messageFormat":
+  1467.180 ±(99.9%) 64.509 ns/op [Average]
+  (min, avg, max) = (1367.149, 1467.180, 1570.939), stdev = 57.186
+  CI (99.9%): [1402.671, 1531.689] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.messageFormat
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 47.47% complete, ETA 00:52:44
+# Fork: 1 of 2
+# Warmup Iteration   1: 2197.109 ns/op
+# Warmup Iteration   2: 1546.650 ns/op
+# Warmup Iteration   3: 1394.187 ns/op
+Iteration   1: 1495.071 ns/op
+Iteration   2: 1559.794 ns/op
+Iteration   3: 1679.960 ns/op
+Iteration   4: 1484.679 ns/op
+Iteration   5: 1513.903 ns/op
+Iteration   6: 1492.428 ns/op
+Iteration   7: 1426.280 ns/op
+
+# Run progress: 47.98% complete, ETA 00:52:14
+# Fork: 2 of 2
+# Warmup Iteration   1: 2174.476 ns/op
+# Warmup Iteration   2: 1593.101 ns/op
+# Warmup Iteration   3: 1466.802 ns/op
+Iteration   1: 1462.266 ns/op
+Iteration   2: 1595.127 ns/op
+Iteration   3: 1789.578 ns/op
+Iteration   4: 1638.851 ns/op
+Iteration   5: 1506.325 ns/op
+Iteration   6: 1597.347 ns/op
+Iteration   7: 1486.532 ns/op
+
+
+Result "messageFormat":
+  1552.010 ±(99.9%) 111.647 ns/op [Average]
+  (min, avg, max) = (1426.280, 1552.010, 1789.578), stdev = 98.972
+  CI (99.9%): [1440.363, 1663.657] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.rawInterpolator
+# Parameters: (arg = Tiny)
+
+# Run progress: 48.48% complete, ETA 00:51:43
+# Fork: 1 of 2
+# Warmup Iteration   1: 109.767 ns/op
+# Warmup Iteration   2: 95.289 ns/op
+# Warmup Iteration   3: 94.416 ns/op
+Iteration   1: 92.688 ns/op
+Iteration   2: 93.839 ns/op
+Iteration   3: 99.112 ns/op
+Iteration   4: 92.669 ns/op
+Iteration   5: 100.377 ns/op
+Iteration   6: 100.150 ns/op
+Iteration   7: 92.502 ns/op
+
+# Run progress: 48.99% complete, ETA 00:51:13
+# Fork: 2 of 2
+# Warmup Iteration   1: 106.897 ns/op
+# Warmup Iteration   2: 94.848 ns/op
+# Warmup Iteration   3: 92.457 ns/op
+Iteration   1: 92.794 ns/op
+Iteration   2: 93.868 ns/op
+Iteration   3: 93.721 ns/op
+Iteration   4: 91.628 ns/op
+Iteration   5: 92.088 ns/op
+Iteration   6: 94.912 ns/op
+Iteration   7: 91.921 ns/op
+
+
+Result "rawInterpolator":
+  94.448 ±(99.9%) 3.478 ns/op [Average]
+  (min, avg, max) = (91.628, 94.448, 100.377), stdev = 3.083
+  CI (99.9%): [90.970, 97.926] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.rawInterpolator
+# Parameters: (arg = VeryShort)
+
+# Run progress: 49.49% complete, ETA 00:50:42
+# Fork: 1 of 2
+# Warmup Iteration   1: 132.546 ns/op
+# Warmup Iteration   2: 121.560 ns/op
+# Warmup Iteration   3: 115.360 ns/op
+Iteration   1: 116.022 ns/op
+Iteration   2: 117.423 ns/op
+Iteration   3: 116.453 ns/op
+Iteration   4: 116.048 ns/op
+Iteration   5: 117.664 ns/op
+Iteration   6: 118.518 ns/op
+Iteration   7: 115.108 ns/op
+
+# Run progress: 50.00% complete, ETA 00:50:12
+# Fork: 2 of 2
+# Warmup Iteration   1: 136.953 ns/op
+# Warmup Iteration   2: 120.590 ns/op
+# Warmup Iteration   3: 117.019 ns/op
+Iteration   1: 115.532 ns/op
+Iteration   2: 118.115 ns/op
+Iteration   3: 118.469 ns/op
+Iteration   4: 116.912 ns/op
+Iteration   5: 118.095 ns/op
+Iteration   6: 121.491 ns/op
+Iteration   7: 115.630 ns/op
+
+
+Result "rawInterpolator":
+  117.249 ±(99.9%) 1.893 ns/op [Average]
+  (min, avg, max) = (115.108, 117.249, 121.491), stdev = 1.678
+  CI (99.9%): [115.356, 119.142] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.rawInterpolator
+# Parameters: (arg = Short)
+
+# Run progress: 50.51% complete, ETA 00:49:41
+# Fork: 1 of 2
+# Warmup Iteration   1: 148.014 ns/op
+# Warmup Iteration   2: 134.274 ns/op
+# Warmup Iteration   3: 132.446 ns/op
+Iteration   1: 133.588 ns/op
+Iteration   2: 145.994 ns/op
+Iteration   3: 131.314 ns/op
+Iteration   4: 131.843 ns/op
+Iteration   5: 141.202 ns/op
+Iteration   6: 138.841 ns/op
+Iteration   7: 131.852 ns/op
+
+# Run progress: 51.01% complete, ETA 00:49:11
+# Fork: 2 of 2
+# Warmup Iteration   1: 156.047 ns/op
+# Warmup Iteration   2: 139.571 ns/op
+# Warmup Iteration   3: 133.000 ns/op
+Iteration   1: 133.407 ns/op
+Iteration   2: 148.818 ns/op
+Iteration   3: 138.315 ns/op
+Iteration   4: 133.649 ns/op
+Iteration   5: 137.515 ns/op
+Iteration   6: 142.019 ns/op
+Iteration   7: 134.454 ns/op
+
+
+Result "rawInterpolator":
+  137.344 ±(99.9%) 6.217 ns/op [Average]
+  (min, avg, max) = (131.314, 137.344, 148.818), stdev = 5.511
+  CI (99.9%): [131.127, 143.560] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.rawInterpolator
+# Parameters: (arg = Medium)
+
+# Run progress: 51.52% complete, ETA 00:48:40
+# Fork: 1 of 2
+# Warmup Iteration   1: 192.944 ns/op
+# Warmup Iteration   2: 165.735 ns/op
+# Warmup Iteration   3: 161.733 ns/op
+Iteration   1: 161.013 ns/op
+Iteration   2: 164.050 ns/op
+Iteration   3: 166.233 ns/op
+Iteration   4: 163.711 ns/op
+Iteration   5: 164.709 ns/op
+Iteration   6: 170.715 ns/op
+Iteration   7: 165.906 ns/op
+
+# Run progress: 52.02% complete, ETA 00:48:10
+# Fork: 2 of 2
+# Warmup Iteration   1: 192.123 ns/op
+# Warmup Iteration   2: 166.811 ns/op
+# Warmup Iteration   3: 161.053 ns/op
+Iteration   1: 162.998 ns/op
+Iteration   2: 169.778 ns/op
+Iteration   3: 210.026 ns/op
+Iteration   4: 165.707 ns/op
+Iteration   5: 171.468 ns/op
+Iteration   6: 166.694 ns/op
+Iteration   7: 167.325 ns/op
+
+
+Result "rawInterpolator":
+  169.310 ±(99.9%) 13.632 ns/op [Average]
+  (min, avg, max) = (161.013, 169.310, 210.026), stdev = 12.084
+  CI (99.9%): [155.678, 182.941] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.rawInterpolator
+# Parameters: (arg = Long)
+
+# Run progress: 52.53% complete, ETA 00:47:39
+# Fork: 1 of 2
+# Warmup Iteration   1: 228.368 ns/op
+# Warmup Iteration   2: 194.618 ns/op
+# Warmup Iteration   3: 185.125 ns/op
+Iteration   1: 209.149 ns/op
+Iteration   2: 188.324 ns/op
+Iteration   3: 208.188 ns/op
+Iteration   4: 211.839 ns/op
+Iteration   5: 187.052 ns/op
+Iteration   6: 192.225 ns/op
+Iteration   7: 197.039 ns/op
+
+# Run progress: 53.03% complete, ETA 00:47:09
+# Fork: 2 of 2
+# Warmup Iteration   1: 259.214 ns/op
+# Warmup Iteration   2: 237.022 ns/op
+# Warmup Iteration   3: 227.505 ns/op
+Iteration   1: 193.721 ns/op
+Iteration   2: 192.434 ns/op
+Iteration   3: 202.502 ns/op
+Iteration   4: 196.502 ns/op
+Iteration   5: 196.587 ns/op
+Iteration   6: 185.117 ns/op
+Iteration   7: 182.230 ns/op
+
+
+Result "rawInterpolator":
+  195.922 ±(99.9%) 10.355 ns/op [Average]
+  (min, avg, max) = (182.230, 195.922, 211.839), stdev = 9.179
+  CI (99.9%): [185.567, 206.277] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.rawInterpolator
+# Parameters: (arg = VeryLong)
+
+# Run progress: 53.54% complete, ETA 00:46:39
+# Fork: 1 of 2
+# Warmup Iteration   1: 643.142 ns/op
+# Warmup Iteration   2: 584.657 ns/op
+# Warmup Iteration   3: 596.389 ns/op
+Iteration   1: 602.322 ns/op
+Iteration   2: 574.216 ns/op
+Iteration   3: 575.350 ns/op
+Iteration   4: 581.937 ns/op
+Iteration   5: 626.799 ns/op
+Iteration   6: 705.573 ns/op
+Iteration   7: 602.533 ns/op
+
+# Run progress: 54.04% complete, ETA 00:46:08
+# Fork: 2 of 2
+# Warmup Iteration   1: 712.092 ns/op
+# Warmup Iteration   2: 609.044 ns/op
+# Warmup Iteration   3: 581.167 ns/op
+Iteration   1: 553.259 ns/op
+Iteration   2: 673.638 ns/op
+Iteration   3: 623.199 ns/op
+Iteration   4: 618.110 ns/op
+Iteration   5: 630.312 ns/op
+Iteration   6: 566.365 ns/op
+Iteration   7: 573.010 ns/op
+
+
+Result "rawInterpolator":
+  607.616 ±(99.9%) 48.383 ns/op [Average]
+  (min, avg, max) = (553.259, 607.616, 705.573), stdev = 42.890
+  CI (99.9%): [559.233, 655.999] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.rawInterpolator
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 54.55% complete, ETA 00:45:38
+# Fork: 1 of 2
+# Warmup Iteration   1: 638.883 ns/op
+# Warmup Iteration   2: 566.125 ns/op
+# Warmup Iteration   3: 585.205 ns/op
+Iteration   1: 623.664 ns/op
+Iteration   2: 584.462 ns/op
+Iteration   3: 604.866 ns/op
+Iteration   4: 566.034 ns/op
+Iteration   5: 550.154 ns/op
+Iteration   6: 572.536 ns/op
+Iteration   7: 637.849 ns/op
+
+# Run progress: 55.05% complete, ETA 00:45:08
+# Fork: 2 of 2
+# Warmup Iteration   1: 693.586 ns/op
+# Warmup Iteration   2: 712.969 ns/op
+# Warmup Iteration   3: 685.839 ns/op
+Iteration   1: 630.739 ns/op
+Iteration   2: 623.430 ns/op
+Iteration   3: 640.130 ns/op
+Iteration   4: 625.439 ns/op
+Iteration   5: 630.814 ns/op
+Iteration   6: 614.974 ns/op
+Iteration   7: 650.044 ns/op
+
+
+Result "rawInterpolator":
+  611.081 ±(99.9%) 34.784 ns/op [Average]
+  (min, avg, max) = (550.154, 611.081, 650.044), stdev = 30.835
+  CI (99.9%): [576.297, 645.865] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sInterpolator
+# Parameters: (arg = Tiny)
+
+# Run progress: 55.56% complete, ETA 00:44:37
+# Fork: 1 of 2
+# Warmup Iteration   1: 133.401 ns/op
+# Warmup Iteration   2: 113.876 ns/op
+# Warmup Iteration   3: 115.540 ns/op
+Iteration   1: 106.228 ns/op
+Iteration   2: 109.949 ns/op
+Iteration   3: 106.806 ns/op
+Iteration   4: 133.096 ns/op
+Iteration   5: 120.885 ns/op
+Iteration   6: 115.371 ns/op
+Iteration   7: 111.525 ns/op
+
+# Run progress: 56.06% complete, ETA 00:44:07
+# Fork: 2 of 2
+# Warmup Iteration   1: 132.583 ns/op
+# Warmup Iteration   2: 115.968 ns/op
+# Warmup Iteration   3: 118.893 ns/op
+Iteration   1: 116.380 ns/op
+Iteration   2: 115.209 ns/op
+Iteration   3: 124.641 ns/op
+Iteration   4: 135.997 ns/op
+Iteration   5: 116.971 ns/op
+Iteration   6: 118.289 ns/op
+Iteration   7: 117.466 ns/op
+
+
+Result "sInterpolator":
+  117.772 ±(99.9%) 9.859 ns/op [Average]
+  (min, avg, max) = (106.228, 117.772, 135.997), stdev = 8.739
+  CI (99.9%): [107.914, 127.631] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sInterpolator
+# Parameters: (arg = VeryShort)
+
+# Run progress: 56.57% complete, ETA 00:43:36
+# Fork: 1 of 2
+# Warmup Iteration   1: 149.318 ns/op
+# Warmup Iteration   2: 131.090 ns/op
+# Warmup Iteration   3: 137.386 ns/op
+Iteration   1: 137.998 ns/op
+Iteration   2: 132.938 ns/op
+Iteration   3: 133.938 ns/op
+Iteration   4: 137.598 ns/op
+Iteration   5: 136.527 ns/op
+Iteration   6: 133.883 ns/op
+Iteration   7: 137.824 ns/op
+
+# Run progress: 57.07% complete, ETA 00:43:06
+# Fork: 2 of 2
+# Warmup Iteration   1: 158.182 ns/op
+# Warmup Iteration   2: 131.527 ns/op
+# Warmup Iteration   3: 158.111 ns/op
+Iteration   1: 140.460 ns/op
+Iteration   2: 135.301 ns/op
+Iteration   3: 133.543 ns/op
+Iteration   4: 135.250 ns/op
+Iteration   5: 135.958 ns/op
+Iteration   6: 140.192 ns/op
+Iteration   7: 167.661 ns/op
+
+
+Result "sInterpolator":
+  138.505 ±(99.9%) 9.831 ns/op [Average]
+  (min, avg, max) = (132.938, 138.505, 167.661), stdev = 8.715
+  CI (99.9%): [128.674, 148.336] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sInterpolator
+# Parameters: (arg = Short)
+
+# Run progress: 57.58% complete, ETA 00:42:35
+# Fork: 1 of 2
+# Warmup Iteration   1: 179.230 ns/op
+# Warmup Iteration   2: 146.027 ns/op
+# Warmup Iteration   3: 151.986 ns/op
+Iteration   1: 147.048 ns/op
+Iteration   2: 150.362 ns/op
+Iteration   3: 146.628 ns/op
+Iteration   4: 154.855 ns/op
+Iteration   5: 154.097 ns/op
+Iteration   6: 156.930 ns/op
+Iteration   7: 154.706 ns/op
+
+# Run progress: 58.08% complete, ETA 00:42:05
+# Fork: 2 of 2
+# Warmup Iteration   1: 176.977 ns/op
+# Warmup Iteration   2: 145.377 ns/op
+# Warmup Iteration   3: 157.668 ns/op
+Iteration   1: 148.056 ns/op
+Iteration   2: 150.619 ns/op
+Iteration   3: 147.976 ns/op
+Iteration   4: 150.837 ns/op
+Iteration   5: 145.585 ns/op
+Iteration   6: 155.081 ns/op
+Iteration   7: 154.351 ns/op
+
+
+Result "sInterpolator":
+  151.224 ±(99.9%) 4.232 ns/op [Average]
+  (min, avg, max) = (145.585, 151.224, 156.930), stdev = 3.752
+  CI (99.9%): [146.992, 155.456] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sInterpolator
+# Parameters: (arg = Medium)
+
+# Run progress: 58.59% complete, ETA 00:41:35
+# Fork: 1 of 2
+# Warmup Iteration   1: 225.047 ns/op
+# Warmup Iteration   2: 176.854 ns/op
+# Warmup Iteration   3: 181.649 ns/op
+Iteration   1: 175.520 ns/op
+Iteration   2: 173.812 ns/op
+Iteration   3: 173.067 ns/op
+Iteration   4: 190.003 ns/op
+Iteration   5: 180.220 ns/op
+Iteration   6: 174.305 ns/op
+Iteration   7: 187.730 ns/op
+
+# Run progress: 59.09% complete, ETA 00:41:04
+# Fork: 2 of 2
+# Warmup Iteration   1: 211.849 ns/op
+# Warmup Iteration   2: 182.554 ns/op
+# Warmup Iteration   3: 182.687 ns/op
+Iteration   1: 194.863 ns/op
+Iteration   2: 181.561 ns/op
+Iteration   3: 177.587 ns/op
+Iteration   4: 183.087 ns/op
+Iteration   5: 177.210 ns/op
+Iteration   6: 228.221 ns/op
+Iteration   7: 218.345 ns/op
+
+
+Result "sInterpolator":
+  186.824 ±(99.9%) 19.003 ns/op [Average]
+  (min, avg, max) = (173.067, 186.824, 228.221), stdev = 16.845
+  CI (99.9%): [167.821, 205.826] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sInterpolator
+# Parameters: (arg = Long)
+
+# Run progress: 59.60% complete, ETA 00:40:34
+# Fork: 1 of 2
+# Warmup Iteration   1: 239.496 ns/op
+# Warmup Iteration   2: 215.253 ns/op
+# Warmup Iteration   3: 228.472 ns/op
+Iteration   1: 215.129 ns/op
+Iteration   2: 222.684 ns/op
+Iteration   3: 227.050 ns/op
+Iteration   4: 241.475 ns/op
+Iteration   5: 250.641 ns/op
+Iteration   6: 250.120 ns/op
+Iteration   7: 243.815 ns/op
+
+# Run progress: 60.10% complete, ETA 00:40:03
+# Fork: 2 of 2
+# Warmup Iteration   1: 272.148 ns/op
+# Warmup Iteration   2: 215.253 ns/op
+# Warmup Iteration   3: 230.676 ns/op
+Iteration   1: 253.558 ns/op
+Iteration   2: 206.185 ns/op
+Iteration   3: 208.597 ns/op
+Iteration   4: 212.486 ns/op
+Iteration   5: 265.585 ns/op
+Iteration   6: 222.441 ns/op
+Iteration   7: 204.768 ns/op
+
+
+Result "sInterpolator":
+  230.324 ±(99.9%) 22.739 ns/op [Average]
+  (min, avg, max) = (204.768, 230.324, 265.585), stdev = 20.158
+  CI (99.9%): [207.584, 253.063] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sInterpolator
+# Parameters: (arg = VeryLong)
+
+# Run progress: 60.61% complete, ETA 00:39:33
+# Fork: 1 of 2
+# Warmup Iteration   1: 645.339 ns/op
+# Warmup Iteration   2: 616.808 ns/op
+# Warmup Iteration   3: 641.240 ns/op
+Iteration   1: 651.567 ns/op
+Iteration   2: 650.163 ns/op
+Iteration   3: 711.851 ns/op
+Iteration   4: 687.375 ns/op
+Iteration   5: 627.251 ns/op
+Iteration   6: 639.541 ns/op
+Iteration   7: 735.560 ns/op
+
+# Run progress: 61.11% complete, ETA 00:39:03
+# Fork: 2 of 2
+# Warmup Iteration   1: 851.040 ns/op
+# Warmup Iteration   2: 707.481 ns/op
+# Warmup Iteration   3: 710.571 ns/op
+Iteration   1: 703.029 ns/op
+Iteration   2: 752.838 ns/op
+Iteration   3: 618.669 ns/op
+Iteration   4: 687.510 ns/op
+Iteration   5: 669.151 ns/op
+Iteration   6: 648.353 ns/op
+Iteration   7: 701.652 ns/op
+
+
+Result "sInterpolator":
+  677.465 ±(99.9%) 45.796 ns/op [Average]
+  (min, avg, max) = (618.669, 677.465, 752.838), stdev = 40.597
+  CI (99.9%): [631.669, 723.261] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sInterpolator
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 61.62% complete, ETA 00:38:32
+# Fork: 1 of 2
+# Warmup Iteration   1: 792.995 ns/op
+# Warmup Iteration   2: 587.691 ns/op
+# Warmup Iteration   3: 614.625 ns/op
+Iteration   1: 794.458 ns/op
+Iteration   2: 640.236 ns/op
+Iteration   3: 573.381 ns/op
+Iteration   4: 646.414 ns/op
+Iteration   5: 670.911 ns/op
+Iteration   6: 631.810 ns/op
+Iteration   7: 684.314 ns/op
+
+# Run progress: 62.12% complete, ETA 00:38:02
+# Fork: 2 of 2
+# Warmup Iteration   1: 774.650 ns/op
+# Warmup Iteration   2: 622.181 ns/op
+# Warmup Iteration   3: 719.687 ns/op
+Iteration   1: 639.134 ns/op
+Iteration   2: 631.057 ns/op
+Iteration   3: 713.745 ns/op
+Iteration   4: 637.409 ns/op
+Iteration   5: 648.220 ns/op
+Iteration   6: 616.490 ns/op
+Iteration   7: 626.521 ns/op
+
+
+Result "sInterpolator":
+  653.864 ±(99.9%) 58.499 ns/op [Average]
+  (min, avg, max) = (573.381, 653.864, 794.458), stdev = 51.857
+  CI (99.9%): [595.366, 712.363] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.scalaConcat
+# Parameters: (arg = Tiny)
+
+# Run progress: 62.63% complete, ETA 00:37:31
+# Fork: 1 of 2
+# Warmup Iteration   1: 46.783 ns/op
+# Warmup Iteration   2: 39.176 ns/op
+# Warmup Iteration   3: 37.210 ns/op
+Iteration   1: 37.354 ns/op
+Iteration   2: 36.546 ns/op
+Iteration   3: 38.246 ns/op
+Iteration   4: 36.440 ns/op
+Iteration   5: 48.806 ns/op
+Iteration   6: 75.829 ns/op
+Iteration   7: 69.700 ns/op
+
+# Run progress: 63.13% complete, ETA 00:37:01
+# Fork: 2 of 2
+# Warmup Iteration   1: 101.734 ns/op
+# Warmup Iteration   2: 64.674 ns/op
+# Warmup Iteration   3: 45.516 ns/op
+Iteration   1: 44.832 ns/op
+Iteration   2: 44.021 ns/op
+Iteration   3: 41.441 ns/op
+Iteration   4: 43.444 ns/op
+Iteration   5: 42.466 ns/op
+Iteration   6: 44.959 ns/op
+Iteration   7: 52.524 ns/op
+
+
+Result "scalaConcat":
+  46.901 ±(99.9%) 13.466 ns/op [Average]
+  (min, avg, max) = (36.440, 46.901, 75.829), stdev = 11.937
+  CI (99.9%): [33.435, 60.366] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.scalaConcat
+# Parameters: (arg = VeryShort)
+
+# Run progress: 63.64% complete, ETA 00:36:31
+# Fork: 1 of 2
+# Warmup Iteration   1: 84.570 ns/op
+# Warmup Iteration   2: 68.985 ns/op
+# Warmup Iteration   3: 70.224 ns/op
+Iteration   1: 70.718 ns/op
+Iteration   2: 68.975 ns/op
+Iteration   3: 66.021 ns/op
+Iteration   4: 64.350 ns/op
+Iteration   5: 66.694 ns/op
+Iteration   6: 65.597 ns/op
+Iteration   7: 62.527 ns/op
+
+# Run progress: 64.14% complete, ETA 00:36:00
+# Fork: 2 of 2
+# Warmup Iteration   1: 76.679 ns/op
+# Warmup Iteration   2: 61.868 ns/op
+# Warmup Iteration   3: 63.433 ns/op
+Iteration   1: 62.616 ns/op
+Iteration   2: 62.387 ns/op
+Iteration   3: 59.590 ns/op
+Iteration   4: 63.314 ns/op
+Iteration   5: 62.005 ns/op
+Iteration   6: 60.146 ns/op
+Iteration   7: 61.137 ns/op
+
+
+Result "scalaConcat":
+  64.005 ±(99.9%) 3.669 ns/op [Average]
+  (min, avg, max) = (59.590, 64.005, 70.718), stdev = 3.253
+  CI (99.9%): [60.336, 67.675] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.scalaConcat
+# Parameters: (arg = Short)
+
+# Run progress: 64.65% complete, ETA 00:35:30
+# Fork: 1 of 2
+# Warmup Iteration   1: 92.248 ns/op
+# Warmup Iteration   2: 71.015 ns/op
+# Warmup Iteration   3: 74.977 ns/op
+Iteration   1: 137.096 ns/op
+Iteration   2: 85.649 ns/op
+Iteration   3: 69.016 ns/op
+Iteration   4: 69.019 ns/op
+Iteration   5: 70.887 ns/op
+Iteration   6: 68.325 ns/op
+Iteration   7: 68.895 ns/op
+
+# Run progress: 65.15% complete, ETA 00:34:59
+# Fork: 2 of 2
+# Warmup Iteration   1: 86.863 ns/op
+# Warmup Iteration   2: 66.525 ns/op
+# Warmup Iteration   3: 65.165 ns/op
+Iteration   1: 65.778 ns/op
+Iteration   2: 67.093 ns/op
+Iteration   3: 65.417 ns/op
+Iteration   4: 65.296 ns/op
+Iteration   5: 66.751 ns/op
+Iteration   6: 65.102 ns/op
+Iteration   7: 69.277 ns/op
+
+
+Result "scalaConcat":
+  73.829 ±(99.9%) 21.341 ns/op [Average]
+  (min, avg, max) = (65.102, 73.829, 137.096), stdev = 18.918
+  CI (99.9%): [52.488, 95.170] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.scalaConcat
+# Parameters: (arg = Medium)
+
+# Run progress: 65.66% complete, ETA 00:34:29
+# Fork: 1 of 2
+# Warmup Iteration   1: 110.202 ns/op
+# Warmup Iteration   2: 96.199 ns/op
+# Warmup Iteration   3: 95.036 ns/op
+Iteration   1: 97.244 ns/op
+Iteration   2: 96.383 ns/op
+Iteration   3: 94.004 ns/op
+Iteration   4: 94.768 ns/op
+Iteration   5: 98.989 ns/op
+Iteration   6: 94.852 ns/op
+Iteration   7: 96.274 ns/op
+
+# Run progress: 66.16% complete, ETA 00:33:58
+# Fork: 2 of 2
+# Warmup Iteration   1: 112.983 ns/op
+# Warmup Iteration   2: 94.857 ns/op
+# Warmup Iteration   3: 94.806 ns/op
+Iteration   1: 96.852 ns/op
+Iteration   2: 97.734 ns/op
+Iteration   3: 95.434 ns/op
+Iteration   4: 95.539 ns/op
+Iteration   5: 97.650 ns/op
+Iteration   6: 95.662 ns/op
+Iteration   7: 95.135 ns/op
+
+
+Result "scalaConcat":
+  96.180 ±(99.9%) 1.562 ns/op [Average]
+  (min, avg, max) = (94.004, 96.180, 98.989), stdev = 1.385
+  CI (99.9%): [94.618, 97.742] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.scalaConcat
+# Parameters: (arg = Long)
+
+# Run progress: 66.67% complete, ETA 00:33:28
+# Fork: 1 of 2
+# Warmup Iteration   1: 141.414 ns/op
+# Warmup Iteration   2: 120.311 ns/op
+# Warmup Iteration   3: 118.093 ns/op
+Iteration   1: 118.079 ns/op
+Iteration   2: 120.493 ns/op
+Iteration   3: 118.992 ns/op
+Iteration   4: 117.413 ns/op
+Iteration   5: 123.550 ns/op
+Iteration   6: 117.254 ns/op
+Iteration   7: 119.146 ns/op
+
+# Run progress: 67.17% complete, ETA 00:32:58
+# Fork: 2 of 2
+# Warmup Iteration   1: 142.428 ns/op
+# Warmup Iteration   2: 117.953 ns/op
+# Warmup Iteration   3: 116.886 ns/op
+Iteration   1: 117.783 ns/op
+Iteration   2: 120.694 ns/op
+Iteration   3: 117.905 ns/op
+Iteration   4: 116.431 ns/op
+Iteration   5: 121.858 ns/op
+Iteration   6: 116.733 ns/op
+Iteration   7: 119.865 ns/op
+
+
+Result "scalaConcat":
+  119.014 ±(99.9%) 2.332 ns/op [Average]
+  (min, avg, max) = (116.431, 119.014, 123.550), stdev = 2.067
+  CI (99.9%): [116.682, 121.346] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.scalaConcat
+# Parameters: (arg = VeryLong)
+
+# Run progress: 67.68% complete, ETA 00:32:27
+# Fork: 1 of 2
+# Warmup Iteration   1: 550.001 ns/op
+# Warmup Iteration   2: 482.737 ns/op
+# Warmup Iteration   3: 486.317 ns/op
+Iteration   1: 486.509 ns/op
+Iteration   2: 492.605 ns/op
+Iteration   3: 481.820 ns/op
+Iteration   4: 483.847 ns/op
+Iteration   5: 499.668 ns/op
+Iteration   6: 482.615 ns/op
+Iteration   7: 504.751 ns/op
+
+# Run progress: 68.18% complete, ETA 00:31:57
+# Fork: 2 of 2
+# Warmup Iteration   1: 543.339 ns/op
+# Warmup Iteration   2: 484.887 ns/op
+# Warmup Iteration   3: 489.328 ns/op
+Iteration   1: 483.220 ns/op
+Iteration   2: 495.645 ns/op
+Iteration   3: 484.377 ns/op
+Iteration   4: 482.655 ns/op
+Iteration   5: 495.811 ns/op
+Iteration   6: 479.051 ns/op
+Iteration   7: 493.192 ns/op
+
+
+Result "scalaConcat":
+  488.983 ±(99.9%) 8.861 ns/op [Average]
+  (min, avg, max) = (479.051, 488.983, 504.751), stdev = 7.855
+  CI (99.9%): [480.122, 497.844] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.scalaConcat
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 68.69% complete, ETA 00:31:26
+# Fork: 1 of 2
+# Warmup Iteration   1: 543.829 ns/op
+# Warmup Iteration   2: 489.787 ns/op
+# Warmup Iteration   3: 484.489 ns/op
+Iteration   1: 491.111 ns/op
+Iteration   2: 502.654 ns/op
+Iteration   3: 484.060 ns/op
+Iteration   4: 485.173 ns/op
+Iteration   5: 503.826 ns/op
+Iteration   6: 485.473 ns/op
+Iteration   7: 487.742 ns/op
+
+# Run progress: 69.19% complete, ETA 00:30:56
+# Fork: 2 of 2
+# Warmup Iteration   1: 545.729 ns/op
+# Warmup Iteration   2: 489.381 ns/op
+# Warmup Iteration   3: 493.479 ns/op
+Iteration   1: 487.148 ns/op
+Iteration   2: 512.651 ns/op
+Iteration   3: 484.243 ns/op
+Iteration   4: 483.058 ns/op
+Iteration   5: 504.546 ns/op
+Iteration   6: 485.385 ns/op
+Iteration   7: 488.157 ns/op
+
+
+Result "scalaConcat":
+  491.802 ±(99.9%) 10.973 ns/op [Average]
+  (min, avg, max) = (483.058, 491.802, 512.651), stdev = 9.727
+  CI (99.9%): [480.829, 502.775] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sfiInterpolator
+# Parameters: (arg = Tiny)
+
+# Run progress: 69.70% complete, ETA 00:30:25
+# Fork: 1 of 2
+# Warmup Iteration   1: 22.086 ns/op
+# Warmup Iteration   2: 18.767 ns/op
+# Warmup Iteration   3: 20.273 ns/op
+Iteration   1: 24.247 ns/op
+Iteration   2: 21.093 ns/op
+Iteration   3: 19.821 ns/op
+Iteration   4: 19.017 ns/op
+Iteration   5: 19.412 ns/op
+Iteration   6: 20.068 ns/op
+Iteration   7: 19.694 ns/op
+
+# Run progress: 70.20% complete, ETA 00:29:55
+# Fork: 2 of 2
+# Warmup Iteration   1: 21.666 ns/op
+# Warmup Iteration   2: 20.284 ns/op
+# Warmup Iteration   3: 19.908 ns/op
+Iteration   1: 19.674 ns/op
+Iteration   2: 20.071 ns/op
+Iteration   3: 19.565 ns/op
+Iteration   4: 19.852 ns/op
+Iteration   5: 19.937 ns/op
+Iteration   6: 21.835 ns/op
+Iteration   7: 19.829 ns/op
+
+
+Result "sfiInterpolator":
+  20.294 ±(99.9%) 1.507 ns/op [Average]
+  (min, avg, max) = (19.017, 20.294, 24.247), stdev = 1.336
+  CI (99.9%): [18.787, 21.801] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sfiInterpolator
+# Parameters: (arg = VeryShort)
+
+# Run progress: 70.71% complete, ETA 00:29:24
+# Fork: 1 of 2
+# Warmup Iteration   1: 23.850 ns/op
+# Warmup Iteration   2: 21.155 ns/op
+# Warmup Iteration   3: 20.292 ns/op
+Iteration   1: 20.248 ns/op
+Iteration   2: 20.650 ns/op
+Iteration   3: 19.934 ns/op
+Iteration   4: 20.201 ns/op
+Iteration   5: 20.188 ns/op
+Iteration   6: 20.633 ns/op
+Iteration   7: 19.861 ns/op
+
+# Run progress: 71.21% complete, ETA 00:28:54
+# Fork: 2 of 2
+# Warmup Iteration   1: 22.725 ns/op
+# Warmup Iteration   2: 20.573 ns/op
+# Warmup Iteration   3: 19.606 ns/op
+Iteration   1: 19.600 ns/op
+Iteration   2: 20.065 ns/op
+Iteration   3: 19.665 ns/op
+Iteration   4: 19.947 ns/op
+Iteration   5: 20.281 ns/op
+Iteration   6: 20.742 ns/op
+Iteration   7: 19.819 ns/op
+
+
+Result "sfiInterpolator":
+  20.131 ±(99.9%) 0.406 ns/op [Average]
+  (min, avg, max) = (19.600, 20.131, 20.742), stdev = 0.360
+  CI (99.9%): [19.725, 20.537] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sfiInterpolator
+# Parameters: (arg = Short)
+
+# Run progress: 71.72% complete, ETA 00:28:24
+# Fork: 1 of 2
+# Warmup Iteration   1: 27.100 ns/op
+# Warmup Iteration   2: 24.894 ns/op
+# Warmup Iteration   3: 24.267 ns/op
+Iteration   1: 24.104 ns/op
+Iteration   2: 25.097 ns/op
+Iteration   3: 25.072 ns/op
+Iteration   4: 24.209 ns/op
+Iteration   5: 24.545 ns/op
+Iteration   6: 24.968 ns/op
+Iteration   7: 24.386 ns/op
+
+# Run progress: 72.22% complete, ETA 00:27:53
+# Fork: 2 of 2
+# Warmup Iteration   1: 27.421 ns/op
+# Warmup Iteration   2: 24.662 ns/op
+# Warmup Iteration   3: 25.954 ns/op
+Iteration   1: 24.284 ns/op
+Iteration   2: 25.955 ns/op
+Iteration   3: 24.240 ns/op
+Iteration   4: 24.204 ns/op
+Iteration   5: 24.650 ns/op
+Iteration   6: 24.970 ns/op
+Iteration   7: 24.251 ns/op
+
+
+Result "sfiInterpolator":
+  24.638 ±(99.9%) 0.587 ns/op [Average]
+  (min, avg, max) = (24.104, 24.638, 25.955), stdev = 0.520
+  CI (99.9%): [24.052, 25.225] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sfiInterpolator
+# Parameters: (arg = Medium)
+
+# Run progress: 72.73% complete, ETA 00:27:23
+# Fork: 1 of 2
+# Warmup Iteration   1: 31.577 ns/op
+# Warmup Iteration   2: 28.428 ns/op
+# Warmup Iteration   3: 28.026 ns/op
+Iteration   1: 28.303 ns/op
+Iteration   2: 29.490 ns/op
+Iteration   3: 28.518 ns/op
+Iteration   4: 28.363 ns/op
+Iteration   5: 29.120 ns/op
+Iteration   6: 29.878 ns/op
+Iteration   7: 28.210 ns/op
+
+# Run progress: 73.23% complete, ETA 00:26:52
+# Fork: 2 of 2
+# Warmup Iteration   1: 31.588 ns/op
+# Warmup Iteration   2: 29.026 ns/op
+# Warmup Iteration   3: 27.973 ns/op
+Iteration   1: 27.902 ns/op
+Iteration   2: 29.387 ns/op
+Iteration   3: 27.966 ns/op
+Iteration   4: 28.072 ns/op
+Iteration   5: 29.300 ns/op
+Iteration   6: 28.809 ns/op
+Iteration   7: 27.963 ns/op
+
+
+Result "sfiInterpolator":
+  28.663 ±(99.9%) 0.745 ns/op [Average]
+  (min, avg, max) = (27.902, 28.663, 29.878), stdev = 0.661
+  CI (99.9%): [27.918, 29.408] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sfiInterpolator
+# Parameters: (arg = Long)
+
+# Run progress: 73.74% complete, ETA 00:26:22
+# Fork: 1 of 2
+# Warmup Iteration   1: 43.291 ns/op
+# Warmup Iteration   2: 39.838 ns/op
+# Warmup Iteration   3: 39.413 ns/op
+Iteration   1: 38.506 ns/op
+Iteration   2: 39.923 ns/op
+Iteration   3: 38.727 ns/op
+Iteration   4: 38.465 ns/op
+Iteration   5: 40.235 ns/op
+Iteration   6: 38.928 ns/op
+Iteration   7: 38.603 ns/op
+
+# Run progress: 74.24% complete, ETA 00:25:51
+# Fork: 2 of 2
+# Warmup Iteration   1: 43.782 ns/op
+# Warmup Iteration   2: 39.636 ns/op
+# Warmup Iteration   3: 39.203 ns/op
+Iteration   1: 39.283 ns/op
+Iteration   2: 41.139 ns/op
+Iteration   3: 39.017 ns/op
+Iteration   4: 39.245 ns/op
+Iteration   5: 41.564 ns/op
+Iteration   6: 39.163 ns/op
+Iteration   7: 39.254 ns/op
+
+
+Result "sfiInterpolator":
+  39.432 ±(99.9%) 1.080 ns/op [Average]
+  (min, avg, max) = (38.465, 39.432, 41.564), stdev = 0.957
+  CI (99.9%): [38.353, 40.512] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sfiInterpolator
+# Parameters: (arg = VeryLong)
+
+# Run progress: 74.75% complete, ETA 00:25:21
+# Fork: 1 of 2
+# Warmup Iteration   1: 192.884 ns/op
+# Warmup Iteration   2: 170.906 ns/op
+# Warmup Iteration   3: 170.625 ns/op
+Iteration   1: 171.753 ns/op
+Iteration   2: 173.760 ns/op
+Iteration   3: 170.697 ns/op
+Iteration   4: 171.080 ns/op
+Iteration   5: 175.497 ns/op
+Iteration   6: 197.348 ns/op
+Iteration   7: 205.653 ns/op
+
+# Run progress: 75.25% complete, ETA 00:24:51
+# Fork: 2 of 2
+# Warmup Iteration   1: 187.737 ns/op
+# Warmup Iteration   2: 173.018 ns/op
+# Warmup Iteration   3: 169.740 ns/op
+Iteration   1: 170.334 ns/op
+Iteration   2: 173.168 ns/op
+Iteration   3: 171.113 ns/op
+Iteration   4: 173.297 ns/op
+Iteration   5: 177.392 ns/op
+Iteration   6: 170.547 ns/op
+Iteration   7: 170.520 ns/op
+
+
+Result "sfiInterpolator":
+  176.583 ±(99.9%) 12.274 ns/op [Average]
+  (min, avg, max) = (170.334, 176.583, 205.653), stdev = 10.880
+  CI (99.9%): [164.309, 188.856] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.sfiInterpolator
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 75.76% complete, ETA 00:24:20
+# Fork: 1 of 2
+# Warmup Iteration   1: 199.456 ns/op
+# Warmup Iteration   2: 175.961 ns/op
+# Warmup Iteration   3: 171.077 ns/op
+Iteration   1: 171.201 ns/op
+Iteration   2: 175.000 ns/op
+Iteration   3: 170.814 ns/op
+Iteration   4: 172.028 ns/op
+Iteration   5: 176.891 ns/op
+Iteration   6: 171.329 ns/op
+Iteration   7: 174.358 ns/op
+
+# Run progress: 76.26% complete, ETA 00:23:50
+# Fork: 2 of 2
+# Warmup Iteration   1: 190.555 ns/op
+# Warmup Iteration   2: 173.533 ns/op
+# Warmup Iteration   3: 171.591 ns/op
+Iteration   1: 172.059 ns/op
+Iteration   2: 174.412 ns/op
+Iteration   3: 172.101 ns/op
+Iteration   4: 175.971 ns/op
+Iteration   5: 181.199 ns/op
+Iteration   6: 170.932 ns/op
+Iteration   7: 171.422 ns/op
+
+
+Result "sfiInterpolator":
+  173.551 ±(99.9%) 3.355 ns/op [Average]
+  (min, avg, max) = (170.814, 173.551, 181.199), stdev = 2.974
+  CI (99.9%): [170.196, 176.906] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.slf4j
+# Parameters: (arg = Tiny)
+
+# Run progress: 76.77% complete, ETA 00:23:19
+# Fork: 1 of 2
+# Warmup Iteration   1: 114.682 ns/op
+# Warmup Iteration   2: 102.904 ns/op
+# Warmup Iteration   3: 101.697 ns/op
+Iteration   1: 102.550 ns/op
+Iteration   2: 103.573 ns/op
+Iteration   3: 101.653 ns/op
+Iteration   4: 101.938 ns/op
+Iteration   5: 105.400 ns/op
+Iteration   6: 101.716 ns/op
+Iteration   7: 102.222 ns/op
+
+# Run progress: 77.27% complete, ETA 00:22:49
+# Fork: 2 of 2
+# Warmup Iteration   1: 111.093 ns/op
+# Warmup Iteration   2: 101.933 ns/op
+# Warmup Iteration   3: 100.254 ns/op
+Iteration   1: 100.400 ns/op
+Iteration   2: 100.265 ns/op
+Iteration   3: 102.229 ns/op
+Iteration   4: 101.171 ns/op
+Iteration   5: 100.545 ns/op
+Iteration   6: 102.136 ns/op
+Iteration   7: 101.256 ns/op
+
+
+Result "slf4j":
+  101.933 ±(99.9%) 1.517 ns/op [Average]
+  (min, avg, max) = (100.265, 101.933, 105.400), stdev = 1.345
+  CI (99.9%): [100.415, 103.450] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.slf4j
+# Parameters: (arg = VeryShort)
+
+# Run progress: 77.78% complete, ETA 00:22:18
+# Fork: 1 of 2
+# Warmup Iteration   1: 112.086 ns/op
+# Warmup Iteration   2: 108.837 ns/op
+# Warmup Iteration   3: 111.815 ns/op
+Iteration   1: 107.798 ns/op
+Iteration   2: 108.163 ns/op
+Iteration   3: 111.041 ns/op
+Iteration   4: 111.416 ns/op
+Iteration   5: 110.144 ns/op
+Iteration   6: 109.114 ns/op
+Iteration   7: 109.611 ns/op
+
+# Run progress: 78.28% complete, ETA 00:21:48
+# Fork: 2 of 2
+# Warmup Iteration   1: 117.584 ns/op
+# Warmup Iteration   2: 105.244 ns/op
+# Warmup Iteration   3: 106.323 ns/op
+Iteration   1: 105.090 ns/op
+Iteration   2: 104.306 ns/op
+Iteration   3: 105.190 ns/op
+Iteration   4: 108.568 ns/op
+Iteration   5: 105.157 ns/op
+Iteration   6: 117.308 ns/op
+Iteration   7: 110.664 ns/op
+
+
+Result "slf4j":
+  108.826 ±(99.9%) 3.857 ns/op [Average]
+  (min, avg, max) = (104.306, 108.826, 117.308), stdev = 3.420
+  CI (99.9%): [104.969, 112.684] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.slf4j
+# Parameters: (arg = Short)
+
+# Run progress: 78.79% complete, ETA 00:21:18
+# Fork: 1 of 2
+# Warmup Iteration   1: 138.890 ns/op
+# Warmup Iteration   2: 140.638 ns/op
+# Warmup Iteration   3: 126.404 ns/op
+Iteration   1: 133.286 ns/op
+Iteration   2: 127.398 ns/op
+Iteration   3: 127.720 ns/op
+Iteration   4: 129.525 ns/op
+Iteration   5: 132.476 ns/op
+Iteration   6: 128.252 ns/op
+Iteration   7: 131.449 ns/op
+
+# Run progress: 79.29% complete, ETA 00:20:47
+# Fork: 2 of 2
+# Warmup Iteration   1: 145.217 ns/op
+# Warmup Iteration   2: 122.953 ns/op
+# Warmup Iteration   3: 123.229 ns/op
+Iteration   1: 123.071 ns/op
+Iteration   2: 120.249 ns/op
+Iteration   3: 122.417 ns/op
+Iteration   4: 128.757 ns/op
+Iteration   5: 122.741 ns/op
+Iteration   6: 122.823 ns/op
+Iteration   7: 123.289 ns/op
+
+
+Result "slf4j":
+  126.675 ±(99.9%) 4.754 ns/op [Average]
+  (min, avg, max) = (120.249, 126.675, 133.286), stdev = 4.214
+  CI (99.9%): [121.921, 131.429] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.slf4j
+# Parameters: (arg = Medium)
+
+# Run progress: 79.80% complete, ETA 00:20:17
+# Fork: 1 of 2
+# Warmup Iteration   1: 185.645 ns/op
+# Warmup Iteration   2: 163.873 ns/op
+# Warmup Iteration   3: 151.273 ns/op
+Iteration   1: 159.378 ns/op
+Iteration   2: 160.799 ns/op
+Iteration   3: 161.191 ns/op
+Iteration   4: 168.833 ns/op
+Iteration   5: 164.096 ns/op
+Iteration   6: 155.532 ns/op
+Iteration   7: 165.369 ns/op
+
+# Run progress: 80.30% complete, ETA 00:19:46
+# Fork: 2 of 2
+# Warmup Iteration   1: 171.889 ns/op
+# Warmup Iteration   2: 151.333 ns/op
+# Warmup Iteration   3: 150.942 ns/op
+Iteration   1: 154.802 ns/op
+Iteration   2: 151.676 ns/op
+Iteration   3: 154.936 ns/op
+Iteration   4: 161.016 ns/op
+Iteration   5: 163.904 ns/op
+Iteration   6: 151.462 ns/op
+Iteration   7: 159.671 ns/op
+
+
+Result "slf4j":
+  159.476 ±(99.9%) 5.882 ns/op [Average]
+  (min, avg, max) = (151.462, 159.476, 168.833), stdev = 5.214
+  CI (99.9%): [153.594, 165.358] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.slf4j
+# Parameters: (arg = Long)
+
+# Run progress: 80.81% complete, ETA 00:19:16
+# Fork: 1 of 2
+# Warmup Iteration   1: 246.613 ns/op
+# Warmup Iteration   2: 195.318 ns/op
+# Warmup Iteration   3: 200.101 ns/op
+Iteration   1: 219.188 ns/op
+Iteration   2: 217.976 ns/op
+Iteration   3: 223.236 ns/op
+Iteration   4: 239.071 ns/op
+Iteration   5: 220.584 ns/op
+Iteration   6: 200.629 ns/op
+Iteration   7: 196.741 ns/op
+
+# Run progress: 81.31% complete, ETA 00:18:45
+# Fork: 2 of 2
+# Warmup Iteration   1: 222.461 ns/op
+# Warmup Iteration   2: 193.558 ns/op
+# Warmup Iteration   3: 194.077 ns/op
+Iteration   1: 198.358 ns/op
+Iteration   2: 192.951 ns/op
+Iteration   3: 196.045 ns/op
+Iteration   4: 194.589 ns/op
+Iteration   5: 196.098 ns/op
+Iteration   6: 193.893 ns/op
+Iteration   7: 192.492 ns/op
+
+
+Result "slf4j":
+  205.847 ±(99.9%) 16.907 ns/op [Average]
+  (min, avg, max) = (192.492, 205.847, 239.071), stdev = 14.987
+  CI (99.9%): [188.940, 222.753] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.slf4j
+# Parameters: (arg = VeryLong)
+
+# Run progress: 81.82% complete, ETA 00:18:15
+# Fork: 1 of 2
+# Warmup Iteration   1: 610.312 ns/op
+# Warmup Iteration   2: 541.785 ns/op
+# Warmup Iteration   3: 555.703 ns/op
+Iteration   1: 567.956 ns/op
+Iteration   2: 553.195 ns/op
+Iteration   3: 559.515 ns/op
+Iteration   4: 565.541 ns/op
+Iteration   5: 561.748 ns/op
+Iteration   6: 551.587 ns/op
+Iteration   7: 553.113 ns/op
+
+# Run progress: 82.32% complete, ETA 00:17:44
+# Fork: 2 of 2
+# Warmup Iteration   1: 609.489 ns/op
+# Warmup Iteration   2: 549.073 ns/op
+# Warmup Iteration   3: 556.263 ns/op
+Iteration   1: 583.013 ns/op
+Iteration   2: 570.733 ns/op
+Iteration   3: 569.798 ns/op
+Iteration   4: 562.096 ns/op
+Iteration   5: 570.857 ns/op
+Iteration   6: 551.741 ns/op
+Iteration   7: 554.844 ns/op
+
+
+Result "slf4j":
+  562.553 ±(99.9%) 10.510 ns/op [Average]
+  (min, avg, max) = (551.587, 562.553, 583.013), stdev = 9.317
+  CI (99.9%): [552.043, 573.063] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.slf4j
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 82.83% complete, ETA 00:17:14
+# Fork: 1 of 2
+# Warmup Iteration   1: 634.799 ns/op
+# Warmup Iteration   2: 567.514 ns/op
+# Warmup Iteration   3: 581.006 ns/op
+Iteration   1: 589.022 ns/op
+Iteration   2: 570.143 ns/op
+Iteration   3: 609.448 ns/op
+Iteration   4: 642.431 ns/op
+Iteration   5: 580.580 ns/op
+Iteration   6: 575.281 ns/op
+Iteration   7: 573.551 ns/op
+
+# Run progress: 83.33% complete, ETA 00:16:44
+# Fork: 2 of 2
+# Warmup Iteration   1: 636.257 ns/op
+# Warmup Iteration   2: 567.636 ns/op
+# Warmup Iteration   3: 571.504 ns/op
+Iteration   1: 585.510 ns/op
+Iteration   2: 571.164 ns/op
+Iteration   3: 581.609 ns/op
+Iteration   4: 579.174 ns/op
+Iteration   5: 580.384 ns/op
+Iteration   6: 573.084 ns/op
+Iteration   7: 583.026 ns/op
+
+
+Result "slf4j":
+  585.315 ±(99.9%) 21.633 ns/op [Average]
+  (min, avg, max) = (570.143, 585.315, 642.431), stdev = 19.177
+  CI (99.9%): [563.682, 606.948] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.stringFormat
+# Parameters: (arg = Tiny)
+
+# Run progress: 83.84% complete, ETA 00:16:13
+# Fork: 1 of 2
+# Warmup Iteration   1: 1076.903 ns/op
+# Warmup Iteration   2: 936.985 ns/op
+# Warmup Iteration   3: 944.482 ns/op
+Iteration   1: 969.512 ns/op
+Iteration   2: 958.264 ns/op
+Iteration   3: 952.921 ns/op
+Iteration   4: 952.035 ns/op
+Iteration   5: 950.432 ns/op
+Iteration   6: 949.747 ns/op
+Iteration   7: 944.782 ns/op
+
+# Run progress: 84.34% complete, ETA 00:15:43
+# Fork: 2 of 2
+# Warmup Iteration   1: 1057.521 ns/op
+# Warmup Iteration   2: 953.864 ns/op
+# Warmup Iteration   3: 966.319 ns/op
+Iteration   1: 966.256 ns/op
+Iteration   2: 969.385 ns/op
+Iteration   3: 1046.830 ns/op
+Iteration   4: 1008.838 ns/op
+Iteration   5: 987.160 ns/op
+Iteration   6: 964.680 ns/op
+Iteration   7: 972.146 ns/op
+
+
+Result "stringFormat":
+  970.928 ±(99.9%) 31.165 ns/op [Average]
+  (min, avg, max) = (944.782, 970.928, 1046.830), stdev = 27.627
+  CI (99.9%): [939.762, 1002.093] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.stringFormat
+# Parameters: (arg = VeryShort)
+
+# Run progress: 84.85% complete, ETA 00:15:12
+# Fork: 1 of 2
+# Warmup Iteration   1: 1219.393 ns/op
+# Warmup Iteration   2: 1020.368 ns/op
+# Warmup Iteration   3: 1005.858 ns/op
+Iteration   1: 1009.842 ns/op
+Iteration   2: 1029.556 ns/op
+Iteration   3: 1011.025 ns/op
+Iteration   4: 1006.961 ns/op
+Iteration   5: 1027.841 ns/op
+Iteration   6: 1012.235 ns/op
+Iteration   7: 1016.863 ns/op
+
+# Run progress: 85.35% complete, ETA 00:14:42
+# Fork: 2 of 2
+# Warmup Iteration   1: 1091.357 ns/op
+# Warmup Iteration   2: 1016.029 ns/op
+# Warmup Iteration   3: 1013.535 ns/op
+Iteration   1: 1020.984 ns/op
+Iteration   2: 1062.493 ns/op
+Iteration   3: 1015.115 ns/op
+Iteration   4: 1016.000 ns/op
+Iteration   5: 1060.418 ns/op
+Iteration   6: 1019.009 ns/op
+Iteration   7: 1009.965 ns/op
+
+
+Result "stringFormat":
+  1022.736 ±(99.9%) 19.920 ns/op [Average]
+  (min, avg, max) = (1006.961, 1022.736, 1062.493), stdev = 17.658
+  CI (99.9%): [1002.816, 1042.656] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.stringFormat
+# Parameters: (arg = Short)
+
+# Run progress: 85.86% complete, ETA 00:14:11
+# Fork: 1 of 2
+# Warmup Iteration   1: 1141.962 ns/op
+# Warmup Iteration   2: 986.253 ns/op
+# Warmup Iteration   3: 982.871 ns/op
+Iteration   1: 994.273 ns/op
+Iteration   2: 1016.287 ns/op
+Iteration   3: 991.090 ns/op
+Iteration   4: 984.208 ns/op
+Iteration   5: 1004.924 ns/op
+Iteration   6: 985.387 ns/op
+Iteration   7: 986.891 ns/op
+
+# Run progress: 86.36% complete, ETA 00:13:41
+# Fork: 2 of 2
+# Warmup Iteration   1: 1107.365 ns/op
+# Warmup Iteration   2: 1034.158 ns/op
+# Warmup Iteration   3: 1015.402 ns/op
+Iteration   1: 1019.691 ns/op
+Iteration   2: 1054.237 ns/op
+Iteration   3: 1016.333 ns/op
+Iteration   4: 1014.283 ns/op
+Iteration   5: 1020.772 ns/op
+Iteration   6: 1025.400 ns/op
+Iteration   7: 1018.333 ns/op
+
+
+Result "stringFormat":
+  1009.436 ±(99.9%) 22.129 ns/op [Average]
+  (min, avg, max) = (984.208, 1009.436, 1054.237), stdev = 19.617
+  CI (99.9%): [987.307, 1031.565] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.stringFormat
+# Parameters: (arg = Medium)
+
+# Run progress: 86.87% complete, ETA 00:13:11
+# Fork: 1 of 2
+# Warmup Iteration   1: 1156.115 ns/op
+# Warmup Iteration   2: 1044.211 ns/op
+# Warmup Iteration   3: 1031.895 ns/op
+Iteration   1: 1036.896 ns/op
+Iteration   2: 1063.721 ns/op
+Iteration   3: 1036.619 ns/op
+Iteration   4: 1031.806 ns/op
+Iteration   5: 1032.106 ns/op
+Iteration   6: 1052.904 ns/op
+Iteration   7: 1032.634 ns/op
+
+# Run progress: 87.37% complete, ETA 00:12:40
+# Fork: 2 of 2
+# Warmup Iteration   1: 1153.946 ns/op
+# Warmup Iteration   2: 1035.392 ns/op
+# Warmup Iteration   3: 1051.261 ns/op
+Iteration   1: 1035.714 ns/op
+Iteration   2: 1044.991 ns/op
+Iteration   3: 1060.011 ns/op
+Iteration   4: 1036.989 ns/op
+Iteration   5: 1036.722 ns/op
+Iteration   6: 1052.940 ns/op
+Iteration   7: 1033.484 ns/op
+
+
+Result "stringFormat":
+  1041.967 ±(99.9%) 12.331 ns/op [Average]
+  (min, avg, max) = (1031.806, 1041.967, 1063.721), stdev = 10.931
+  CI (99.9%): [1029.636, 1054.298] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.stringFormat
+# Parameters: (arg = Long)
+
+# Run progress: 87.88% complete, ETA 00:12:10
+# Fork: 1 of 2
+# Warmup Iteration   1: 1161.481 ns/op
+# Warmup Iteration   2: 1043.911 ns/op
+# Warmup Iteration   3: 1064.776 ns/op
+Iteration   1: 1045.259 ns/op
+Iteration   2: 1088.049 ns/op
+Iteration   3: 1071.890 ns/op
+Iteration   4: 1044.005 ns/op
+Iteration   5: 1045.355 ns/op
+Iteration   6: 1047.198 ns/op
+Iteration   7: 1062.905 ns/op
+
+# Run progress: 88.38% complete, ETA 00:11:39
+# Fork: 2 of 2
+# Warmup Iteration   1: 1199.484 ns/op
+# Warmup Iteration   2: 1078.232 ns/op
+# Warmup Iteration   3: 1105.954 ns/op
+Iteration   1: 1084.187 ns/op
+Iteration   2: 1096.388 ns/op
+Iteration   3: 1111.319 ns/op
+Iteration   4: 1077.863 ns/op
+Iteration   5: 1075.123 ns/op
+Iteration   6: 1082.139 ns/op
+Iteration   7: 1096.318 ns/op
+
+
+Result "stringFormat":
+  1073.429 ±(99.9%) 24.562 ns/op [Average]
+  (min, avg, max) = (1044.005, 1073.429, 1111.319), stdev = 21.774
+  CI (99.9%): [1048.866, 1097.991] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.stringFormat
+# Parameters: (arg = VeryLong)
+
+# Run progress: 88.89% complete, ETA 00:11:09
+# Fork: 1 of 2
+# Warmup Iteration   1: 1576.179 ns/op
+# Warmup Iteration   2: 1369.011 ns/op
+# Warmup Iteration   3: 1384.993 ns/op
+Iteration   1: 1383.126 ns/op
+Iteration   2: 1364.564 ns/op
+Iteration   3: 1367.602 ns/op
+Iteration   4: 1400.715 ns/op
+Iteration   5: 1370.832 ns/op
+Iteration   6: 1362.042 ns/op
+Iteration   7: 1388.667 ns/op
+
+# Run progress: 89.39% complete, ETA 00:10:38
+# Fork: 2 of 2
+# Warmup Iteration   1: 1528.791 ns/op
+# Warmup Iteration   2: 1331.876 ns/op
+# Warmup Iteration   3: 1337.931 ns/op
+Iteration   1: 1375.364 ns/op
+Iteration   2: 1328.256 ns/op
+Iteration   3: 1347.278 ns/op
+Iteration   4: 1371.087 ns/op
+Iteration   5: 1331.426 ns/op
+Iteration   6: 1327.659 ns/op
+Iteration   7: 1366.524 ns/op
+
+
+Result "stringFormat":
+  1363.224 ±(99.9%) 25.229 ns/op [Average]
+  (min, avg, max) = (1327.659, 1363.224, 1400.715), stdev = 22.365
+  CI (99.9%): [1337.996, 1388.453] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.ManyParamsBenchmark.stringFormat
+# Parameters: (arg = VeryLongSizeMiss)
+
+# Run progress: 89.90% complete, ETA 00:10:08
+# Fork: 1 of 2
+# Warmup Iteration   1: 1572.581 ns/op
+# Warmup Iteration   2: 1382.103 ns/op
+# Warmup Iteration   3: 1393.133 ns/op
+Iteration   1: 1426.114 ns/op
+Iteration   2: 1380.935 ns/op
+Iteration   3: 1388.146 ns/op
+Iteration   4: 1423.962 ns/op
+Iteration   5: 1386.399 ns/op
+Iteration   6: 1378.100 ns/op
+Iteration   7: 1396.791 ns/op
+
+# Run progress: 90.40% complete, ETA 00:09:38
+# Fork: 2 of 2
+# Warmup Iteration   1: 1551.591 ns/op
+# Warmup Iteration   2: 1411.774 ns/op
+# Warmup Iteration   3: 1452.736 ns/op
+Iteration   1: 1518.988 ns/op
+Iteration   2: 1365.448 ns/op
+Iteration   3: 1385.785 ns/op
+Iteration   4: 1483.699 ns/op
+Iteration   5: 1366.129 ns/op
+Iteration   6: 1362.023 ns/op
+Iteration   7: 1369.592 ns/op
+
+
+Result "stringFormat":
+  1402.293 ±(99.9%) 52.758 ns/op [Average]
+  (min, avg, max) = (1362.023, 1402.293, 1518.988), stdev = 46.769
+  CI (99.9%): [1349.535, 1455.052] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.NewStringBenchmark.baseline
+
+# Run progress: 90.91% complete, ETA 00:09:07
+# Fork: 1 of 2
+# Warmup Iteration   1: 2.380 ns/op
+# Warmup Iteration   2: 2.478 ns/op
+# Warmup Iteration   3: 2.094 ns/op
+Iteration   1: 2.139 ns/op
+Iteration   2: 2.001 ns/op
+Iteration   3: 2.174 ns/op
+Iteration   4: 2.365 ns/op
+Iteration   5: 2.305 ns/op
+Iteration   6: 2.093 ns/op
+Iteration   7: 2.004 ns/op
+
+# Run progress: 91.41% complete, ETA 00:08:37
+# Fork: 2 of 2
+# Warmup Iteration   1: 2.472 ns/op
+# Warmup Iteration   2: 2.387 ns/op
+# Warmup Iteration   3: 2.057 ns/op
+Iteration   1: 2.211 ns/op
+Iteration   2: 2.142 ns/op
+Iteration   3: 1.963 ns/op
+Iteration   4: 2.028 ns/op
+Iteration   5: 1.953 ns/op
+Iteration   6: 2.187 ns/op
+Iteration   7: 2.037 ns/op
+
+
+Result "baseline":
+  2.114 ±(99.9%) 0.142 ns/op [Average]
+  (min, avg, max) = (1.953, 2.114, 2.365), stdev = 0.126
+  CI (99.9%): [1.972, 2.257] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.NewStringBenchmark.fastSb
+
+# Run progress: 91.92% complete, ETA 00:08:06
+# Fork: 1 of 2
+# Warmup Iteration   1: 9.345 ns/op
+# Warmup Iteration   2: 8.571 ns/op
+# Warmup Iteration   3: 7.575 ns/op
+Iteration   1: 7.284 ns/op
+Iteration   2: 6.493 ns/op
+Iteration   3: 6.269 ns/op
+Iteration   4: 7.152 ns/op
+Iteration   5: 8.435 ns/op
+Iteration   6: 7.449 ns/op
+Iteration   7: 6.882 ns/op
+
+# Run progress: 92.42% complete, ETA 00:07:36
+# Fork: 2 of 2
+# Warmup Iteration   1: 8.319 ns/op
+# Warmup Iteration   2: 8.013 ns/op
+# Warmup Iteration   3: 7.213 ns/op
+Iteration   1: 7.225 ns/op
+Iteration   2: 6.431 ns/op
+Iteration   3: 6.472 ns/op
+Iteration   4: 6.704 ns/op
+Iteration   5: 6.642 ns/op
+Iteration   6: 6.321 ns/op
+Iteration   7: 6.594 ns/op
+
+
+Result "fastSb":
+  6.882 ±(99.9%) 0.662 ns/op [Average]
+  (min, avg, max) = (6.269, 6.882, 8.435), stdev = 0.587
+  CI (99.9%): [6.221, 7.544] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.NewStringBenchmark.fastString
+
+# Run progress: 92.93% complete, ETA 00:07:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 5.483 ns/op
+# Warmup Iteration   2: 5.252 ns/op
+# Warmup Iteration   3: 4.583 ns/op
+Iteration   1: 6.189 ns/op
+Iteration   2: 4.404 ns/op
+Iteration   3: 4.173 ns/op
+Iteration   4: 3.837 ns/op
+Iteration   5: 3.809 ns/op
+Iteration   6: 3.737 ns/op
+Iteration   7: 3.754 ns/op
+
+# Run progress: 93.43% complete, ETA 00:06:35
+# Fork: 2 of 2
+# Warmup Iteration   1: 5.005 ns/op
+# Warmup Iteration   2: 4.584 ns/op
+# Warmup Iteration   3: 3.831 ns/op
+Iteration   1: 3.865 ns/op
+Iteration   2: 3.773 ns/op
+Iteration   3: 3.772 ns/op
+Iteration   4: 3.872 ns/op
+Iteration   5: 3.910 ns/op
+Iteration   6: 3.736 ns/op
+Iteration   7: 3.731 ns/op
+
+
+Result "fastString":
+  4.040 ±(99.9%) 0.730 ns/op [Average]
+  (min, avg, max) = (3.731, 4.040, 6.189), stdev = 0.647
+  CI (99.9%): [3.310, 4.770] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.NewStringBenchmark.newString
+
+# Run progress: 93.94% complete, ETA 00:06:05
+# Fork: 1 of 2
+# Warmup Iteration   1: 179.883 ns/op
+# Warmup Iteration   2: 204.254 ns/op
+# Warmup Iteration   3: 186.084 ns/op
+Iteration   1: 216.834 ns/op
+Iteration   2: 189.843 ns/op
+Iteration   3: 174.109 ns/op
+Iteration   4: 170.665 ns/op
+Iteration   5: 185.017 ns/op
+Iteration   6: 183.430 ns/op
+Iteration   7: 232.630 ns/op
+
+# Run progress: 94.44% complete, ETA 00:05:34
+# Fork: 2 of 2
+# Warmup Iteration   1: 216.984 ns/op
+# Warmup Iteration   2: 169.199 ns/op
+# Warmup Iteration   3: 167.877 ns/op
+Iteration   1: 201.587 ns/op
+Iteration   2: 174.872 ns/op
+Iteration   3: 171.848 ns/op
+Iteration   4: 174.600 ns/op
+Iteration   5: 177.064 ns/op
+Iteration   6: 165.239 ns/op
+Iteration   7: 164.014 ns/op
+
+
+Result "newString":
+  184.411 ±(99.9%) 22.518 ns/op [Average]
+  (min, avg, max) = (164.014, 184.411, 232.630), stdev = 19.961
+  CI (99.9%): [161.893, 206.928] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.NewStringBenchmark.sbToString
+
+# Run progress: 94.95% complete, ETA 00:05:04
+# Fork: 1 of 2
+# Warmup Iteration   1: 185.669 ns/op
+# Warmup Iteration   2: 162.735 ns/op
+# Warmup Iteration   3: 162.366 ns/op
+Iteration   1: 162.850 ns/op
+Iteration   2: 163.439 ns/op
+Iteration   3: 164.482 ns/op
+Iteration   4: 165.009 ns/op
+Iteration   5: 190.246 ns/op
+Iteration   6: 169.402 ns/op
+Iteration   7: 167.140 ns/op
+
+# Run progress: 95.45% complete, ETA 00:04:33
+# Fork: 2 of 2
+# Warmup Iteration   1: 199.866 ns/op
+# Warmup Iteration   2: 193.205 ns/op
+# Warmup Iteration   3: 171.048 ns/op
+Iteration   1: 182.426 ns/op
+Iteration   2: 189.416 ns/op
+Iteration   3: 172.645 ns/op
+Iteration   4: 162.474 ns/op
+Iteration   5: 168.378 ns/op
+Iteration   6: 169.579 ns/op
+Iteration   7: 165.646 ns/op
+
+
+Result "sbToString":
+  170.938 ±(99.9%) 10.713 ns/op [Average]
+  (min, avg, max) = (162.474, 170.938, 190.246), stdev = 9.497
+  CI (99.9%): [160.225, 181.651] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.StringBuilderBenchmark.javaStringBuilder
+
+# Run progress: 95.96% complete, ETA 00:04:03
+# Fork: 1 of 2
+# Warmup Iteration   1: 7.553 ns/op
+# Warmup Iteration   2: 7.848 ns/op
+# Warmup Iteration   3: 9.101 ns/op
+Iteration   1: 7.848 ns/op
+Iteration   2: 7.381 ns/op
+Iteration   3: 6.930 ns/op
+Iteration   4: 8.133 ns/op
+Iteration   5: 9.116 ns/op
+Iteration   6: 7.405 ns/op
+Iteration   7: 7.244 ns/op
+
+# Run progress: 96.46% complete, ETA 00:03:33
+# Fork: 2 of 2
+# Warmup Iteration   1: 8.163 ns/op
+# Warmup Iteration   2: 7.025 ns/op
+# Warmup Iteration   3: 7.201 ns/op
+Iteration   1: 7.153 ns/op
+Iteration   2: 7.171 ns/op
+Iteration   3: 9.247 ns/op
+Iteration   4: 7.259 ns/op
+Iteration   5: 6.648 ns/op
+Iteration   6: 7.607 ns/op
+Iteration   7: 6.997 ns/op
+
+
+Result "javaStringBuilder":
+  7.581 ±(99.9%) 0.873 ns/op [Average]
+  (min, avg, max) = (6.648, 7.581, 9.247), stdev = 0.774
+  CI (99.9%): [6.708, 8.454] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.StringBuilderBenchmark.javaStringBuilder2
+
+# Run progress: 96.97% complete, ETA 00:03:02
+# Fork: 1 of 2
+# Warmup Iteration   1: 221.969 ns/op
+# Warmup Iteration   2: 253.023 ns/op
+# Warmup Iteration   3: 176.416 ns/op
+Iteration   1: 177.708 ns/op
+Iteration   2: 182.364 ns/op
+Iteration   3: 181.365 ns/op
+Iteration   4: 172.219 ns/op
+Iteration   5: 173.140 ns/op
+Iteration   6: 180.274 ns/op
+Iteration   7: 169.887 ns/op
+
+# Run progress: 97.47% complete, ETA 00:02:32
+# Fork: 2 of 2
+# Warmup Iteration   1: 187.943 ns/op
+# Warmup Iteration   2: 175.814 ns/op
+# Warmup Iteration   3: 174.993 ns/op
+Iteration   1: 174.339 ns/op
+Iteration   2: 179.972 ns/op
+Iteration   3: 187.948 ns/op
+Iteration   4: 173.681 ns/op
+Iteration   5: 170.807 ns/op
+Iteration   6: 185.581 ns/op
+Iteration   7: 173.365 ns/op
+
+
+Result "javaStringBuilder2":
+  177.332 ±(99.9%) 6.396 ns/op [Average]
+  (min, avg, max) = (169.887, 177.332, 187.948), stdev = 5.669
+  CI (99.9%): [170.937, 183.728] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.StringBuilderBenchmark.scalaStringBuilder
+
+# Run progress: 97.98% complete, ETA 00:02:01
+# Fork: 1 of 2
+# Warmup Iteration   1: 21.861 ns/op
+# Warmup Iteration   2: 21.580 ns/op
+# Warmup Iteration   3: 20.533 ns/op
+Iteration   1: 20.495 ns/op
+Iteration   2: 20.710 ns/op
+Iteration   3: 20.921 ns/op
+Iteration   4: 22.342 ns/op
+Iteration   5: 21.139 ns/op
+Iteration   6: 21.834 ns/op
+Iteration   7: 20.793 ns/op
+
+# Run progress: 98.48% complete, ETA 00:01:31
+# Fork: 2 of 2
+# Warmup Iteration   1: 22.303 ns/op
+# Warmup Iteration   2: 21.863 ns/op
+# Warmup Iteration   3: 21.396 ns/op
+Iteration   1: 21.098 ns/op
+Iteration   2: 21.181 ns/op
+Iteration   3: 21.576 ns/op
+Iteration   4: 22.165 ns/op
+Iteration   5: 21.025 ns/op
+Iteration   6: 21.341 ns/op
+Iteration   7: 20.678 ns/op
+
+
+Result "scalaStringBuilder":
+  21.236 ±(99.9%) 0.632 ns/op [Average]
+  (min, avg, max) = (20.495, 21.236, 22.342), stdev = 0.560
+  CI (99.9%): [20.604, 21.867] (assumes normal distribution)
+
+
+# JMH 1.16 (released 1745 days ago, please consider updating!)
+# VM version: JDK 1.8.0_282, VM 25.282-b00
+# VM invoker: /usr/local/Cellar/openjdk@8/1.8.0+282/libexec/openjdk.jdk/Contents/Home/jre/bin/java
+# VM options: -Xmx2G
+# Warmup: 3 iterations, 3 s each
+# Measurement: 7 iterations, 3 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.komanov.stringformat.jmh.StringBuilderBenchmark.scalaStringBuilder2
+
+# Run progress: 98.99% complete, ETA 00:01:00
+# Fork: 1 of 2
+# Warmup Iteration   1: 540.505 ns/op
+# Warmup Iteration   2: 508.675 ns/op
+# Warmup Iteration   3: 498.857 ns/op
+Iteration   1: 485.432 ns/op
+Iteration   2: 488.020 ns/op
+Iteration   3: 490.794 ns/op
+Iteration   4: 484.516 ns/op
+Iteration   5: 485.517 ns/op
+Iteration   6: 539.098 ns/op
+Iteration   7: 544.996 ns/op
+
+# Run progress: 99.49% complete, ETA 00:00:30
+# Fork: 2 of 2
+# Warmup Iteration   1: 559.720 ns/op
+# Warmup Iteration   2: 530.954 ns/op
+# Warmup Iteration   3: 551.982 ns/op
+Iteration   1: 491.341 ns/op
+Iteration   2: 486.385 ns/op
+Iteration   3: 495.580 ns/op
+Iteration   4: 501.415 ns/op
+Iteration   5: 487.526 ns/op
+Iteration   6: 512.742 ns/op
+Iteration   7: 484.471 ns/op
+
+
+Result "scalaStringBuilder2":
+  498.417 ±(99.9%) 22.668 ns/op [Average]
+  (min, avg, max) = (484.471, 498.417, 544.996), stdev = 20.094
+  CI (99.9%): [475.749, 521.084] (assumes normal distribution)
+
+
+# Run complete. Total time: 01:40:24
+
+Benchmark                                              (arg)  Mode  Cnt     Score     Error  Units
+ConstStringBenchmark.baseline                            N/A  avgt   14     2.098 ±   0.128  ns/op
+ConstStringBenchmark.sInterpolator                       N/A  avgt   14    36.118 ±   2.024  ns/op
+ConstStringBenchmark.sfiInterpolator                     N/A  avgt   14     2.264 ±   0.324  ns/op
+EmptyStringBenchmark.baseline                            N/A  avgt   14     2.316 ±   0.267  ns/op
+EmptyStringBenchmark.sInterpolator                       N/A  avgt   14    25.773 ±   1.043  ns/op
+EmptyStringBenchmark.sfiInterpolator                     N/A  avgt   14     2.166 ±   0.100  ns/op
+ManyParamsBenchmark.concatOptimized1                    Tiny  avgt   14    48.903 ±   2.580  ns/op
+ManyParamsBenchmark.concatOptimized1               VeryShort  avgt   14    49.535 ±   3.278  ns/op
+ManyParamsBenchmark.concatOptimized1                   Short  avgt   14    73.638 ±   5.976  ns/op
+ManyParamsBenchmark.concatOptimized1                  Medium  avgt   14    78.567 ±   3.641  ns/op
+ManyParamsBenchmark.concatOptimized1                    Long  avgt   14    81.077 ±   3.806  ns/op
+ManyParamsBenchmark.concatOptimized1                VeryLong  avgt   14   211.499 ±  30.257  ns/op
+ManyParamsBenchmark.concatOptimized1        VeryLongSizeMiss  avgt   14   198.849 ±   8.727  ns/op
+ManyParamsBenchmark.concatOptimized2                    Tiny  avgt   14    58.732 ±   1.212  ns/op
+ManyParamsBenchmark.concatOptimized2               VeryShort  avgt   14    69.369 ±   3.545  ns/op
+ManyParamsBenchmark.concatOptimized2                   Short  avgt   14    86.100 ±   3.165  ns/op
+ManyParamsBenchmark.concatOptimized2                  Medium  avgt   14    90.547 ±   3.174  ns/op
+ManyParamsBenchmark.concatOptimized2                    Long  avgt   14   106.601 ±   3.736  ns/op
+ManyParamsBenchmark.concatOptimized2                VeryLong  avgt   14   297.303 ±   7.316  ns/op
+ManyParamsBenchmark.concatOptimized2        VeryLongSizeMiss  avgt   14   300.363 ±   5.991  ns/op
+ManyParamsBenchmark.concatOptimizedMacros               Tiny  avgt   14    34.100 ±   2.157  ns/op
+ManyParamsBenchmark.concatOptimizedMacros          VeryShort  avgt   14    34.432 ±   2.251  ns/op
+ManyParamsBenchmark.concatOptimizedMacros              Short  avgt   14    43.266 ±   3.234  ns/op
+ManyParamsBenchmark.concatOptimizedMacros             Medium  avgt   14    44.070 ±   2.536  ns/op
+ManyParamsBenchmark.concatOptimizedMacros               Long  avgt   14    55.678 ±   1.975  ns/op
+ManyParamsBenchmark.concatOptimizedMacros           VeryLong  avgt   14   183.325 ±   5.615  ns/op
+ManyParamsBenchmark.concatOptimizedMacros   VeryLongSizeMiss  avgt   14   177.562 ±   4.700  ns/op
+ManyParamsBenchmark.fInterpolator                       Tiny  avgt   14   992.399 ±  13.339  ns/op
+ManyParamsBenchmark.fInterpolator                  VeryShort  avgt   14   991.912 ±  11.878  ns/op
+ManyParamsBenchmark.fInterpolator                      Short  avgt   14  1011.815 ±   9.769  ns/op
+ManyParamsBenchmark.fInterpolator                     Medium  avgt   14  1050.196 ±  25.075  ns/op
+ManyParamsBenchmark.fInterpolator                       Long  avgt   14  1085.740 ±  18.418  ns/op
+ManyParamsBenchmark.fInterpolator                   VeryLong  avgt   14  1356.361 ±  33.768  ns/op
+ManyParamsBenchmark.fInterpolator           VeryLongSizeMiss  avgt   14  1446.111 ±  60.438  ns/op
+ManyParamsBenchmark.javaConcat                          Tiny  avgt   14    34.331 ±   4.217  ns/op
+ManyParamsBenchmark.javaConcat                     VeryShort  avgt   14    61.674 ±   5.749  ns/op
+ManyParamsBenchmark.javaConcat                         Short  avgt   14    66.075 ±   6.533  ns/op
+ManyParamsBenchmark.javaConcat                        Medium  avgt   14    89.197 ±   2.964  ns/op
+ManyParamsBenchmark.javaConcat                          Long  avgt   14   118.508 ±   4.425  ns/op
+ManyParamsBenchmark.javaConcat                      VeryLong  avgt   14   598.878 ±  93.014  ns/op
+ManyParamsBenchmark.javaConcat              VeryLongSizeMiss  avgt   14   541.427 ±  35.569  ns/op
+ManyParamsBenchmark.messageFormat                       Tiny  avgt   14   982.759 ±  70.576  ns/op
+ManyParamsBenchmark.messageFormat                  VeryShort  avgt   14  1006.953 ±  36.497  ns/op
+ManyParamsBenchmark.messageFormat                      Short  avgt   14   998.222 ±  22.051  ns/op
+ManyParamsBenchmark.messageFormat                     Medium  avgt   14  1060.060 ±  35.170  ns/op
+ManyParamsBenchmark.messageFormat                       Long  avgt   14  1116.410 ±  41.892  ns/op
+ManyParamsBenchmark.messageFormat                   VeryLong  avgt   14  1467.180 ±  64.509  ns/op
+ManyParamsBenchmark.messageFormat           VeryLongSizeMiss  avgt   14  1552.010 ± 111.647  ns/op
+ManyParamsBenchmark.rawInterpolator                     Tiny  avgt   14    94.448 ±   3.478  ns/op
+ManyParamsBenchmark.rawInterpolator                VeryShort  avgt   14   117.249 ±   1.893  ns/op
+ManyParamsBenchmark.rawInterpolator                    Short  avgt   14   137.344 ±   6.217  ns/op
+ManyParamsBenchmark.rawInterpolator                   Medium  avgt   14   169.310 ±  13.632  ns/op
+ManyParamsBenchmark.rawInterpolator                     Long  avgt   14   195.922 ±  10.355  ns/op
+ManyParamsBenchmark.rawInterpolator                 VeryLong  avgt   14   607.616 ±  48.383  ns/op
+ManyParamsBenchmark.rawInterpolator         VeryLongSizeMiss  avgt   14   611.081 ±  34.784  ns/op
+ManyParamsBenchmark.sInterpolator                       Tiny  avgt   14   117.772 ±   9.859  ns/op
+ManyParamsBenchmark.sInterpolator                  VeryShort  avgt   14   138.505 ±   9.831  ns/op
+ManyParamsBenchmark.sInterpolator                      Short  avgt   14   151.224 ±   4.232  ns/op
+ManyParamsBenchmark.sInterpolator                     Medium  avgt   14   186.824 ±  19.003  ns/op
+ManyParamsBenchmark.sInterpolator                       Long  avgt   14   230.324 ±  22.739  ns/op
+ManyParamsBenchmark.sInterpolator                   VeryLong  avgt   14   677.465 ±  45.796  ns/op
+ManyParamsBenchmark.sInterpolator           VeryLongSizeMiss  avgt   14   653.864 ±  58.499  ns/op
+ManyParamsBenchmark.scalaConcat                         Tiny  avgt   14    46.901 ±  13.466  ns/op
+ManyParamsBenchmark.scalaConcat                    VeryShort  avgt   14    64.005 ±   3.669  ns/op
+ManyParamsBenchmark.scalaConcat                        Short  avgt   14    73.829 ±  21.341  ns/op
+ManyParamsBenchmark.scalaConcat                       Medium  avgt   14    96.180 ±   1.562  ns/op
+ManyParamsBenchmark.scalaConcat                         Long  avgt   14   119.014 ±   2.332  ns/op
+ManyParamsBenchmark.scalaConcat                     VeryLong  avgt   14   488.983 ±   8.861  ns/op
+ManyParamsBenchmark.scalaConcat             VeryLongSizeMiss  avgt   14   491.802 ±  10.973  ns/op
+ManyParamsBenchmark.sfiInterpolator                     Tiny  avgt   14    20.294 ±   1.507  ns/op
+ManyParamsBenchmark.sfiInterpolator                VeryShort  avgt   14    20.131 ±   0.406  ns/op
+ManyParamsBenchmark.sfiInterpolator                    Short  avgt   14    24.638 ±   0.587  ns/op
+ManyParamsBenchmark.sfiInterpolator                   Medium  avgt   14    28.663 ±   0.745  ns/op
+ManyParamsBenchmark.sfiInterpolator                     Long  avgt   14    39.432 ±   1.080  ns/op
+ManyParamsBenchmark.sfiInterpolator                 VeryLong  avgt   14   176.583 ±  12.274  ns/op
+ManyParamsBenchmark.sfiInterpolator         VeryLongSizeMiss  avgt   14   173.551 ±   3.355  ns/op
+ManyParamsBenchmark.slf4j                               Tiny  avgt   14   101.933 ±   1.517  ns/op
+ManyParamsBenchmark.slf4j                          VeryShort  avgt   14   108.826 ±   3.857  ns/op
+ManyParamsBenchmark.slf4j                              Short  avgt   14   126.675 ±   4.754  ns/op
+ManyParamsBenchmark.slf4j                             Medium  avgt   14   159.476 ±   5.882  ns/op
+ManyParamsBenchmark.slf4j                               Long  avgt   14   205.847 ±  16.907  ns/op
+ManyParamsBenchmark.slf4j                           VeryLong  avgt   14   562.553 ±  10.510  ns/op
+ManyParamsBenchmark.slf4j                   VeryLongSizeMiss  avgt   14   585.315 ±  21.633  ns/op
+ManyParamsBenchmark.stringFormat                        Tiny  avgt   14   970.928 ±  31.165  ns/op
+ManyParamsBenchmark.stringFormat                   VeryShort  avgt   14  1022.736 ±  19.920  ns/op
+ManyParamsBenchmark.stringFormat                       Short  avgt   14  1009.436 ±  22.129  ns/op
+ManyParamsBenchmark.stringFormat                      Medium  avgt   14  1041.967 ±  12.331  ns/op
+ManyParamsBenchmark.stringFormat                        Long  avgt   14  1073.429 ±  24.562  ns/op
+ManyParamsBenchmark.stringFormat                    VeryLong  avgt   14  1363.224 ±  25.229  ns/op
+ManyParamsBenchmark.stringFormat            VeryLongSizeMiss  avgt   14  1402.293 ±  52.758  ns/op
+NewStringBenchmark.baseline                              N/A  avgt   14     2.114 ±   0.142  ns/op
+NewStringBenchmark.fastSb                                N/A  avgt   14     6.882 ±   0.662  ns/op
+NewStringBenchmark.fastString                            N/A  avgt   14     4.040 ±   0.730  ns/op
+NewStringBenchmark.newString                             N/A  avgt   14   184.411 ±  22.518  ns/op
+NewStringBenchmark.sbToString                            N/A  avgt   14   170.938 ±  10.713  ns/op
+StringBuilderBenchmark.javaStringBuilder                 N/A  avgt   14     7.581 ±   0.873  ns/op
+StringBuilderBenchmark.javaStringBuilder2                N/A  avgt   14   177.332 ±   6.396  ns/op
+StringBuilderBenchmark.scalaStringBuilder                N/A  avgt   14    21.236 ±   0.632  ns/op
+StringBuilderBenchmark.scalaStringBuilder2               N/A  avgt   14   498.417 ±  22.668  ns/op
+
+Benchmark result is saved to jmh-result.json
