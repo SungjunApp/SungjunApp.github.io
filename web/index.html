@@ -19,6 +19,7 @@
     />
 
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -42,11 +43,24 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#recent-work">Recent Work</a></li>
-          <li><a href="#startup-projects">Startup Projects</a></li>
+          <li>
+            <a class="main-nav-link" href="#skills">Skills</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#recent-work">Recent Work</a>
+          </li>
+          <li>
+            <a class="main-nav-link" href="#startup-projects"
+              >Startup Projects</a
+            >
+          </li>
+          <li><a class="main-nav-link nav-cta" href="#">Contact</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-intro">
@@ -115,14 +129,11 @@
             <ul>
               Database:
               <li>PostgresSQL</li>
-              <li>Mysql</li>
-              <li>MongoDB</li>
-            </ul>
-            <ul>
-              Cache:
               <li>Elasticseach</li>
               <li>Memcached</li>
               <li>Redis</li>
+              <li>MongoDB</li>
+              <li>Mysql</li>
             </ul>
           </div>
         </div>
@@ -281,7 +292,7 @@
           >
             <div class="project-icon-box project-margin-bottom">
               <img class="project-icon" src="img/app/studymate.png" />
-              <span class="text-primary no-margin">Study Mate</span>
+              <span class="text-primary no-margin">StudyMate</span>
             </div>
             <p class="text-secondary text-center project-margin-bottom">
               Recording daily study time and sharing it with groups motivating
