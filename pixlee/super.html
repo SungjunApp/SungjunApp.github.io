@@ -1,21 +1,30 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Pixlee Test</title>
+  <script src="//assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js" type="text/javascript" id="pixlee-widget-js"></script>
 </head>
-<body bgcolor="#00ff00">
-<div id="pixlee_container"></div>
-<script type="text/javascript">
-  window.PixleeAsyncInit = function() {
-    Pixlee.init({
-      apiKey:'yDMO7jXPGyXMiSEzkaxr'
-    });
-    Pixlee.addSimpleWidget({
-      widgetId:8494854
-    });
-  };
+<body>
+<div id="container_8494854"></div>
+<script>
+  window.Pixlee.init({ apiKey: 'yDMO7jXPGyXMiSEzkaxr' })
+  window.Pixlee.addSimpleWidget({
+    containerId: container_8494854,
+    widgetId: 8494854,
+    subscribedEvents: ['widgetLoaded']
+  })
+  window.addEventListener("message", (event) => {
+    if (event?.data) {
+      try {
+        const { eventName } = JSON.parse(event.data)
+        if (eventName === 'widgetLoaded') {
+          // hide loading skeleton
+          // this.isLoading = false
+        }
+      } catch (e) {
+        // noop
+      }
+    }
+  }, false)
+  window.Pixlee.resizeWidget()
 </script>
-<script src="//assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
 </body>
 </html>
