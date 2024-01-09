@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+  <!-- This page is displayed when someone clicks a valid 'reset password' link.
+       Pro and Enterprise accounts may edit this page and tell Parse to use that custom
+       version in their Parse app. See the App Settings page for more information.
+       Users should feel free to add to this page (i.e. branding or security widgets)
+       but should be sure not to delete any of the form inputs or the javascript from the
+       template file. This javascript is what adds the necessary values to authenticate
+       this session with Parse.
+       The query params 'username' and 'app' hold the friendly names for your current user and
+       your app. You should feel free to incorporate their values to make the page more personal.
+       If you are missing form parameters in your POST, Parse will navigate back to this page and
+       add an 'error' query parameter.
+  -->
+  <head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	  <title>Pixlee Test</title>
+	</head>
+  	<body bgcolor="#00ff00">
+		<div id="pixlee_container"></div>
+		<script type="text/javascript">
+			window.PixleeAsyncInit = function() {
+				Pixlee.init({
+					apiKey:'oUmM0uIiFOyAAtg6JKYd'
+				});
+				Pixlee.addProductWidget({
+					widgetId:2782280
+				});
+			};
+
+		</script>
+		<script src="https://assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+		<button type="button">Click Me!</button>
+	</body>
+</html>
