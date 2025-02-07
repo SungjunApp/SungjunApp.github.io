@@ -1,21 +1,21 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-	  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	  <title>Pixlee Test</title>
-	</head>
-  	<body bgcolor="#00ff00">
-		<div id="pixlee_container"></div>
-		<script type="text/javascript">
-			window.PixleeAsyncInit = function() {
-				Pixlee.init({
-					apiKey:'qD9q60DA4uU8kAiMeMU2'
-				});
-				Pixlee.addSimpleWidget({
-					widgetId:4225849
-				});
-			};
-		</script>
-		<script src="https://assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
-	</body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  
+  <body>
+
+    <div id="pixlee_container"></div>
+    <script type="text/javascript">
+    window.PixleeAsyncInit = function() {
+        Pixlee.init({apiKey:'qD9q60DA4uU8kAiMeMU2'});
+        Pixlee.addCategoryWidget({accountId:1600, widgetId:3847749, insensitiveCategoryName:"camping"});
+        // Pixlee.addSimpleWidget({widgetId:3847749, categoryName:"camping"});
+    };
+    </script>
+    <script src="https://beta.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+    </div>
+  </body>
 </html>
